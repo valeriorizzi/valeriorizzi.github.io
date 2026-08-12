@@ -6,7 +6,7 @@ subtitle: Senior Researcher (CS II), University of Geneva
 
 profile:
   align: right
-  image: #prof_pic.jpg
+  image: false #prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>rue Michel Servet 1</p>
