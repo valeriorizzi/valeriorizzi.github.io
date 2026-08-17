@@ -100,7 +100,6 @@ cv:
       - name: Turkish
         summary: "Basic"        
 
-sections:
     Research Interests:
       - "Molecular dynamics simulations of rare events using enhanced sampling techniques such as OPES and Metadynamics"
       - "Calculations of thermodynamic and kinetic properties, such as free energies and residence times"
@@ -108,4 +107,10 @@ sections:
       - "Protein-Ligand binding and drug discovery"
       - "Protein folding"
       - "Capturing and encoding the role of water in biophysical systems"
-      - "Computational Chemistry and reaction pathway discovery"            
+      - "Computational Chemistry and reaction pathway discovery"     
+
+    Interests:
+      - name: Physics
+        icon: fa-solid fa-tag
+        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"      
+      
