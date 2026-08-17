@@ -24,7 +24,7 @@ cv:
   sections:
     Education:
       - institution: Queen's University Belfast
-        location: Atomistic Simulation Centre, Belfast, UK
+        location: Belfast, UK
         url: "https://link.springer.com/book/10.1007/978-3-319-96280-1"
         area: Computational Physics
         studyType: PhD
@@ -59,19 +59,36 @@ cv:
           - "Supervisor: Fausto Borgonovi."
 
     Experience:
-      - institution: Biomolecular & Pharmaceutical Modelling Group, University of Geneva
+      - company: University of Geneva
         location: Geneva, Switzerland
         position: Researcher (Maître-assistant)
         start_date: 09/2022
         end_date: 12/2025
         highlights:
+          - in the Biomolecular & Pharmaceutical Modelling Group led by Francesco Luigi Gervasio.
           - Research and development in enhanced sampling algorithms and collective variables.
+
+      - company: Italian Institute of Technology (IIT)
+        location: Genoa, Italy
+        position: PostDoc
+        start_date: 01/2021
+        end_date: 08/2022
+        highlights:
+          - in the Atomistic simulations unit led by Michele Parrinello.
+
+      - company: ETH Zürich, Università della Svizzera Italiana
+        location: Lugano, Switzerland
+        position: PostDoc
+        start_date: 06/2017
+        end_date: 12/2020
+        highlights:
+          - in the research group led by Michele Parrinello.          
 
     Skills:
       - name: Computational Research
         level: Expert
         icon: fa-solid fa-code
-        keywords: "Molecular Dynamics, Enhanced Sampling, OPES, PLUMED, GROMACS, Python, C++"
+        keywords: "Molecular Dynamics, Enhanced Sampling, OPES, PLUMED, GROMACS, CP2K, Python, FORTRAN, C++, LaTeX"
 
     Languages:
       - name: Italian
