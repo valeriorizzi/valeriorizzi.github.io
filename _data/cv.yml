@@ -5,7 +5,7 @@ cv:
   institution: Biomolecular & Pharmaceutical Modelling Group, University of Geneva
   location: CMU, B09.2018.a
   image: ""
-  summary: "Computational scientist specializing in molecular dynamics simulations and enhanced sampling methodology development."
+  summary: "Computational scientist specializing in molecular dynamics simulations and enhanced sampling methodology development in the Biomolecular & Pharmaceutical Modelling Group led by Francesco Luigi Gervasio."
 
   social_networks:
     - network: Google Scholar
@@ -88,7 +88,7 @@ cv:
       - name: Computational Research
         level: Expert
         icon: fa-solid fa-code
-        keywords: "Molecular Dynamics, Enhanced Sampling, OPES, PLUMED, GROMACS, CP2K, Python, FORTRAN, C++, LaTeX"
+        keywords: "Molecular Dynamics, Enhanced Sampling, OPES, PLUMED, GROMACS, CP2K, LAMMPS, Matlab, Python, FORTRAN, C++, LaTeX, OpenMP"
 
     Languages:
       - name: Italian
@@ -99,3 +99,13 @@ cv:
         summary: "Fluent"
       - name: Turkish
         summary: "Basic"        
+
+sections:
+    Research Interests:
+      - "Molecular dynamics simulations of rare events using enhanced sampling techniques such as OPES and Metadynamics"
+      - "Calculations of thermodynamic and kinetic properties, such as free energies and residence times"
+      - "Development of dimensionality reduction algorithms and construction of effective collective variables"
+      - "Protein-Ligand binding and drug discovery"
+      - "Protein folding"
+      - "Capturing and encoding the role of water in biophysical systems"
+      - "Computational Chemistry and reaction pathway discovery"            
