@@ -109,8 +109,17 @@ cv:
       - "Capturing and encoding the role of water in biophysical systems"
       - "Computational Chemistry and reaction pathway discovery"     
 
-    Interests:
-      - name: Physics
+    Research Interests:
+      - name: Molecular dynamics simulations 
         icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"      
+        keywords: "rare events, enhanced sampling, OPES, Metadynamics, free energy, kinetic rates"      
+      - name: Dimensionality reduction methods
+        icon: fa-solid fa-tag
+        keywords: "collective variables (CVs) construction, machine learning, HLDA, DeepLDA, bioinspired descriptors for folding, path CV, hydration CVs"  
+      - name: Biophysical applications
+        icon: fa-solid fa-tag
+        keywords: "protein-ligand binding, protein folding, GPCR activation, nucleic acid dynamics, drug discovery"          
+      - name: Chemistry and Materials appications
+        icon: fa-solid fa-tag
+        keywords: "reaction discovery, solid state chemistry, crystallisation"                  
       
