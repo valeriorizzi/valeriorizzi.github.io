@@ -8,7 +8,9 @@ description: Curriculum Vitae
 ---
 
 <div class="cv">
-  {% for section in site.data.cv.sections %}
+  {% assign cv_data = site.data.cv.cv | default: site.data.cv %}
+
+  {% for section in cv_data.sections %}
     <div class="card mt-4 p-3 shadow-sm">
       <h3 class="card-title font-weight-medium border-bottom pb-2">{{ section[0] }}</h3>
 
@@ -54,7 +56,7 @@ description: Curriculum Vitae
           </div>
         {% endfor %}
 
-      <!-- Skills and Categorized Research Interests -->
+      <!-- Skills and Research Interests -->
       {% elsif section[0] == "Skills" or section[0] == "Research Interests" %}
         {% for entry in section[1] %}
           {% if entry.name %}
@@ -89,9 +91,14 @@ description: Curriculum Vitae
   {% endfor %}
 </div>
 
-<!-- Live Publications Sync from _bibliography/papers.bib -->
+<!-- Publications Section with Button to Full Publications Page -->
 <div class="card mt-4 p-3 shadow-sm">
-  <h3 class="card-title font-weight-medium border-bottom pb-2">Publications</h3>
+  <div class="d-flex justify-content-between align-items-center border-bottom pb-2">
+    <h3 class="card-title font-weight-medium mb-0">Publications</h3>
+    <a href="{{ '/publications/' | relative_url }}" class="btn btn-sm btn-outline-primary">
+      <i class="fa-solid fa-book-open mr-1"></i> View Full Publications Page
+    </a>
+  </div>
   <div class="publications mt-3">
     {% bibliography %}
   </div>
