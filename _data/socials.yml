@@ -9,11 +9,11 @@ github_username: valeriorizzi
 linkedin_username: valerio-rizzi-61b345180
 scopus_id: 57206725975
 research_gate_profile: "Valerio-Rizzi"
-bluesky_url: "valeriorizzi.bsky.social"
 x_username: ValerioRizzi33
 
 
-#research_gate_profile: Valerio-Rizzi
+
+# bluesky_url: "valeriorizzi.bsky.social"
 #inspirehep_id:  # Inspire HEP author ID
 #rss_icon: true # comment this line to hide the RSS icon
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
@@ -21,3 +21,4 @@ x_username: ValerioRizzi33
 #  logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
 #  title: Custom Social
 #  url: https://www.alberteinstein.com/
+
