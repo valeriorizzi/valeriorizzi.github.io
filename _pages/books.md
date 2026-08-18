@@ -7,10 +7,28 @@ nav_order: 6
 collection: books
 ---
 
-<div id="goodreads-recent" class="row mt-3">
-  <div class="col-12 text-center py-4">
-    <div class="spinner-border text-secondary" role="status">
-      <span class="sr-only">Loading books...</span>
+<div class="goodreads-shelf mb-5">
+  <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center mb-3 border-bottom pb-2">
+    <h3 class="font-weight-bold mb-2 mb-sm-0" style="font-size: 1.25rem;">Bookshelf</h3>
+    
+    <!-- Dynamic Filter & Sort Controls -->
+    <div id="goodreads-controls" class="d-flex flex-wrap align-items-center" style="display: none;">
+      <div class="btn-group btn-group-sm mr-2 mb-1" role="group" aria-label="Sort Order">
+        <button type="button" class="btn btn-outline-secondary active" id="btn-recent">Most Recent</button>
+        <button type="button" class="btn btn-outline-secondary" id="btn-random">Random</button>
+      </div>
+      <div class="btn-group btn-group-sm mb-1" role="group" aria-label="Rating Filter">
+        <button type="button" class="btn btn-outline-secondary" id="btn-all-stars">All Books</button>
+        <button type="button" class="btn btn-outline-secondary active" id="btn-5-stars">★ 5 Stars Only</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="goodreads-recent" class="row">
+    <div class="col-12 text-center py-4">
+      <div class="spinner-border text-secondary" role="status">
+        <span class="sr-only">Loading books...</span>
+      </div>
     </div>
   </div>
 </div>
@@ -20,12 +38,14 @@ collection: books
 document.addEventListener("DOMContentLoaded", function() {
   const GOODREADS_RSS = "https://www.goodreads.com/review/list_rss/28031214-valerio?shelf=read";
   
-  // Configuration options:
-  // DISPLAY_MODE: "random" for random selection, "recent" for most recent
-  const DISPLAY_MODE = "random"; 
+  // Default Configurations
+  let currentMode = "recent";  // "recent" or "random"
+  let onlyFiveStars = true;    // true to filter by 5-star ratings, false for all
   const MAX_BOOKS = 10;
 
-  // Fallback array of CORS proxies in case one is blocked
+  let cachedItems = [];
+
+  // Fallback array of CORS proxies
   const PROXIES = [
     "https://corsproxy.io/?" + encodeURIComponent(GOODREADS_RSS),
     "https://api.allorigins.win/raw?url=" + encodeURIComponent(GOODREADS_RSS)
@@ -46,36 +66,49 @@ document.addEventListener("DOMContentLoaded", function() {
     return null;
   }
 
-  fetchFeed().then(xmlText => {
+  const getTagText = (item, tagName) => {
+    const el = item.getElementsByTagName(tagName)[0];
+    return el && el.textContent ? el.textContent.trim() : null;
+  };
+
+  function renderBooks() {
     const container = document.getElementById("goodreads-recent");
-    if (!xmlText) {
-      container.innerHTML = "<div class='col-12'><p class='text-muted small'>Unable to fetch Goodreads feed. Please try refreshing.</p></div>";
-      return;
-    }
-
-    const xml = new DOMParser().parseFromString(xmlText, "text/xml");
-    let items = Array.from(xml.querySelectorAll("item"));
-
-    if (!items || items.length === 0) {
+    if (!cachedItems || cachedItems.length === 0) {
       container.innerHTML = "<div class='col-12'><p class='text-muted small'>No books found on this shelf.</p></div>";
       return;
     }
 
-    const getTagText = (item, tagName) => {
-      const el = item.getElementsByTagName(tagName)[0];
-      return el && el.textContent ? el.textContent.trim() : null;
-    };
+    // 1. Filter by 5-star rating if enabled
+    let filtered = cachedItems.slice();
+    if (onlyFiveStars) {
+      filtered = filtered.filter(item => {
+        const rating = parseInt(getTagText(item, "user_rating"), 10);
+        return rating === 5;
+      });
+    }
 
-    // Apply sorting/selection based on DISPLAY_MODE
-    if (DISPLAY_MODE === "random") {
+    if (filtered.length === 0) {
+      container.innerHTML = "<div class='col-12'><p class='text-muted small'>No 5-star books found in the feed.</p></div>";
+      return;
+    }
+
+    // 2. Sort or Shuffle
+    if (currentMode === "recent") {
+      filtered.sort((a, b) => {
+        const dateA = new Date(getTagText(a, "user_date_added") || getTagText(a, "pubDate") || 0);
+        const dateB = new Date(getTagText(b, "user_date_added") || getTagText(b, "pubDate") || 0);
+        return dateB - dateA; // Descending order (newest first)
+      });
+    } else if (currentMode === "random") {
       // Fisher-Yates shuffle
-      for (let i = items.length - 1; i > 0; i--) {
+      for (let i = filtered.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [items[i], items[j]] = [items[j], items[i]];
+        [filtered[i], filtered[j]] = [filtered[j], filtered[i]];
       }
     }
 
-    const displayBooks = items.slice(0, MAX_BOOKS);
+    // 3. Slice to MAX_BOOKS
+    const displayBooks = filtered.slice(0, MAX_BOOKS);
 
     container.innerHTML = displayBooks.map(item => {
       const title = getTagText(item, "title") || "Untitled";
@@ -139,6 +172,60 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
       `;
     }).join('');
+  }
+
+  // Bind Control Buttons
+  const btnRecent = document.getElementById("btn-recent");
+  const btnRandom = document.getElementById("btn-random");
+  const btnAllStars = document.getElementById("btn-all-stars");
+  const btn5Stars = document.getElementById("btn-5-stars");
+  const feedControls = document.getElementById("goodreads-controls");
+
+  if (btnRecent && btnRandom) {
+    btnRecent.addEventListener("click", function() {
+      currentMode = "recent";
+      btnRecent.classList.add("active");
+      btnRandom.classList.remove("active");
+      renderBooks();
+    });
+    btnRandom.addEventListener("click", function() {
+      currentMode = "random";
+      btnRandom.classList.add("active");
+      btnRecent.classList.remove("active");
+      renderBooks();
+    });
+  }
+
+  if (btnAllStars && btn5Stars) {
+    btnAllStars.addEventListener("click", function() {
+      onlyFiveStars = false;
+      btnAllStars.classList.add("active");
+      btn5Stars.classList.remove("active");
+      renderBooks();
+    });
+    btn5Stars.addEventListener("click", function() {
+      onlyFiveStars = true;
+      btn5Stars.classList.add("active");
+      btnAllStars.classList.remove("active");
+      renderBooks();
+    });
+  }
+
+  fetchFeed().then(xmlText => {
+    const container = document.getElementById("goodreads-recent");
+    if (!xmlText) {
+      container.innerHTML = "<div class='col-12'><p class='text-muted small'>Unable to fetch Goodreads feed. Please try refreshing.</p></div>";
+      return;
+    }
+
+    const xml = new DOMParser().parseFromString(xmlText, "text/xml");
+    cachedItems = Array.from(xml.querySelectorAll("item"));
+
+    if (feedControls) {
+      feedControls.style.display = "flex";
+    }
+
+    renderBooks();
   }).catch(err => {
     console.error("Error loading Goodreads feed:", err);
     document.getElementById("goodreads-recent").innerHTML = "<div class='col-12'><p class='text-muted small'>Failed to load book feed.</p></div>";
