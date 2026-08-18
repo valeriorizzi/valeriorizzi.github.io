@@ -6,13 +6,18 @@ subtitle: Senior Researcher (CS II), University of Geneva
 
 profile:
   align: right
-  image: false #prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: DSC_9398_red.jpg #prof_pic.jpg
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>rue Michel Servet 1</p>
     <p>Geneva 1205, Switzerland</p>
     <p>Office: CMU, B09.2018.a</p>
     <p>Phone: +41 (0)22 379 33 98</p>
+    
+    <div class="scholar-badge mt-3 pt-2 border-top text-center">
+      <small class="text-muted d-block mb-1">Google Scholar Metrics</small>
+      <img src="{{ '/assets/img/scholar_stats.svg' | relative_url }}" class="img-fluid rounded" alt="Google Scholar Stats" style="width: 100%; max-width: 260px;">
+    </div>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
