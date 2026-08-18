@@ -8,7 +8,9 @@ nav_order: 4
 
 ## Current Courses
 
-### **Advanced Modelling and Data Analysis for Pharmaceutical Sciences** <span class="badge badge-success align-middle">Current</span>
+---
+
+### **Advanced Modelling and Data Analysis for Pharmaceutical Sciences**
 **19H330** · University of Geneva  
 **Term:** *Spring 2023 – Present*
 
@@ -19,7 +21,7 @@ nav_order: 4
   <i class="fa-brands fa-github"></i> GitHub
 </a>
 
-### **TP de Chimie Thérapeutique R&D - Modélisation** <span class="badge badge-success align-middle">Current</span>
+### **TP de Chimie Thérapeutique R&D - Modélisation**
 **13H903** · University of Geneva  
 **Term:** *Spring 2023 – Present*
 
@@ -27,7 +29,7 @@ nav_order: 4
   <i class="fa-solid fa-graduation-cap"></i> Moodle
 </a>
 
-### **Modélisation et Analyse de Données** <span class="badge badge-success align-middle">Current</span>
+### **Modélisation et Analyse de Données**
 **14H120** · University of Geneva  
 **Term:** *Spring 2023 – Present*
 
@@ -35,7 +37,7 @@ nav_order: 4
   <i class="fa-solid fa-graduation-cap"></i> Moodle
 </a>
 
-### **Projet interdisciplinaire** <span class="badge badge-success align-middle">Current</span>
+### **Projet interdisciplinaire**
 **14H907** · University of Geneva  
 **Term:** *Spring 2025 – Present*
 
@@ -43,7 +45,7 @@ nav_order: 4
   <i class="fa-solid fa-graduation-cap"></i> Moodle
 </a>
 
-### **TD Introduction à la recherche bibliographique** <span class="badge badge-success align-middle">Current</span>
+### **TD Introduction à la recherche bibliographique**
 **13H900** · University of Geneva  
 **Term:** *Spring 2024 – Present*
 
@@ -51,9 +53,11 @@ nav_order: 4
   <i class="fa-solid fa-graduation-cap"></i> Moodle
 </a>
 
----
+<div class="my-5"></div>
 
 ## Past Courses
+
+---
 
 ### **Fluid Mechanics**
 **AMA2005** · Queen’s University Belfast  
