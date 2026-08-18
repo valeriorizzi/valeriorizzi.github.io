@@ -8,13 +8,16 @@
 document.addEventListener("DOMContentLoaded", function() {
   const GOODREADS_RSS = "https://www.goodreads.com/review/list_rss/28031214-valerio?shelf=read";
   
+  // Configuration options:
+  // DISPLAY_MODE: "random" for random selection, "recent" for most recent
+  const DISPLAY_MODE = "random"; 
+  const MAX_BOOKS = 10;
+
   // Fallback array of CORS proxies in case one is blocked
   const PROXIES = [
     "https://corsproxy.io/?" + encodeURIComponent(GOODREADS_RSS),
     "https://api.allorigins.win/raw?url=" + encodeURIComponent(GOODREADS_RSS)
   ];
-  
-  const MAX_BOOKS = 20;
 
   async function fetchFeed() {
     for (const proxy of PROXIES) {
@@ -39,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     const xml = new DOMParser().parseFromString(xmlText, "text/xml");
-    const items = Array.from(xml.querySelectorAll("item"));
+    let items = Array.from(xml.querySelectorAll("item"));
 
     if (!items || items.length === 0) {
       container.innerHTML = "<div class='col-12'><p class='text-muted small'>No books found on this shelf.</p></div>";
@@ -50,6 +53,15 @@ document.addEventListener("DOMContentLoaded", function() {
       const el = item.getElementsByTagName(tagName)[0];
       return el && el.textContent ? el.textContent.trim() : null;
     };
+
+    // Apply sorting/selection based on DISPLAY_MODE
+    if (DISPLAY_MODE === "random") {
+      // Fisher-Yates shuffle
+      for (let i = items.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [items[i], items[j]] = [items[j], items[i]];
+      }
+    }
 
     const displayBooks = items.slice(0, MAX_BOOKS);
 
