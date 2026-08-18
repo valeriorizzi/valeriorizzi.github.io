@@ -53,11 +53,5 @@ I am a computational scientist and method developer at the University of Geneva,
     <div>
       <img src="/assets/img/scholar_stats.svg" class="img-fluid rounded" alt="Google Scholar Stats" style="width: 100%; max-width: 320px;">
     </div>
-
-    <div>
-      <a href="{{ '/publications/' | relative_url }}" class="btn btn-outline-primary btn-sm">
-        View All Publications &rarr;
-      </a>
-    </div>
   </div>
 </div>
