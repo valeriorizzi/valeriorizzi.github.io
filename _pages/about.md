@@ -5,7 +5,7 @@ permalink: /
 subtitle: Senior Researcher (CS II), University of Geneva
 
 profile:
-  align: left
+  align: right
   image: DSC_9398_red.jpg #prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
@@ -14,11 +14,6 @@ profile:
     <p>Office: CMU, B09.2018.a</p>
     <p>Phone: +41 (0)22 379 33 98</p>
     
-    <div class="scholar-badge mt-3 pt-2 border-top text-center">
-      <small class="text-muted d-block mb-1">Google Scholar Impact & Metrics</small>
-      <img src="/assets/img/scholar_stats.svg" class="img-fluid rounded" alt="Google Scholar Stats" style="width: 100%; max-width: 260px;">
-    </div>
-
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
@@ -34,6 +29,11 @@ latest_posts:
 ---
 
 I am a computational scientist and method developer at the University of Geneva, working at the intersection of statistical mechanics, biophysics and computational chemistry. My research focuses on advancing molecular dynamics simulations by developing enhanced sampling methodologies, particularly the OneOPES framework, and data-driven collective variables. Through the integration of statistical theory and efficient software implementation, I seek to overcome the timescale limitations of classical atomistic simulations, enabling the exploration and convergence of complex free energy landscapes.
+
+<div class="scholar-badge mt-3 pt-2 border-top text-center">
+  <small class="text-muted d-block mb-1">Google Scholar Impact & Metrics</small>
+  <img src="/assets/img/scholar_stats.svg" class="img-fluid rounded" alt="Google Scholar Stats" style="width: 100%; max-width: 260px;">
+</div>
 
 <!-- Button linking to all publications -->
 <div class="more-info" style="text-align: center; margin-top: 20px;">
