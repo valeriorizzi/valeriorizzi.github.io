@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Configuration options:
   // DISPLAY_MODE: "random" for random selection, "recent" for most recent
   const DISPLAY_MODE = "random"; 
-  const MAX_BOOKS = 10;
+  const MAX_BOOKS = 12;
 
   // Fallback array of CORS proxies in case one is blocked
   const PROXIES = [
@@ -109,25 +109,31 @@ document.addEventListener("DOMContentLoaded", function() {
       }
 
       return `
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="card h-100 shadow-sm border p-3">
-            <a href="${link}" target="_blank" rel="noopener noreferrer" class="text-center mb-3 d-block">
-              ${!isNoPhoto 
-                ? `<img src="${coverUrl}" class="card-img-top rounded" alt="${title}" style="max-height: 250px; object-fit: contain;">` 
-                : `<div class="p-4 bg-light rounded text-muted small border">No Cover Available</div>`}
-            </a>
-            <div class="card-body p-0 d-flex flex-column justify-content-between">
-              <div>
-                <h6 class="card-title font-weight-bold mb-1">${title}</h6>
-                <p class="text-secondary small mb-3">by <strong>${author}</strong></p>
+        <div class="col-md-6 mb-3">
+          <div class="card h-100 shadow-sm border p-2">
+            <div class="row no-gutters align-items-center h-100">
+              <div class="col-4 text-center">
+                <a href="${link}" target="_blank" rel="noopener noreferrer" class="d-block p-1">
+                  ${!isNoPhoto 
+                    ? `<img src="${coverUrl}" class="img-fluid rounded" alt="${title}" style="max-height: 120px; object-fit: contain;">` 
+                    : `<div class="p-2 bg-light rounded text-muted extra-small border">No Cover</div>`}
+                </a>
               </div>
+              <div class="col-8 pl-2 pr-2">
+                <div class="card-body p-0 d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <h6 class="card-title font-weight-bold mb-1" style="font-size: 0.85rem; line-height: 1.2;">${title}</h6>
+                    <p class="text-secondary mb-2" style="font-size: 0.75rem;">by <strong>${author}</strong></p>
+                  </div>
 
-              <ul class="list-unstyled small border-top pt-2 mb-0">
-                ${published ? `<li class="d-flex justify-content-between py-1"><span class="text-muted">Published:</span> <strong>${published}</strong></li>` : ''}
-                ${avgRating ? `<li class="d-flex justify-content-between py-1"><span class="text-muted">Avg Rating:</span> <strong>${avgRating} / 5</strong></li>` : ''}
-                ${formattedDate ? `<li class="d-flex justify-content-between py-1"><span class="text-muted">Added:</span> <strong>${formattedDate}</strong></li>` : ''}
-                <li class="d-flex justify-content-between py-1"><span class="text-muted">My Rating:</span> <span>${myRatingHtml}</span></li>
-              </ul>
+                  <ul class="list-unstyled border-top pt-1 mb-0" style="font-size: 0.72rem;">
+                    ${published ? `<li class="d-flex justify-content-between py-0"><span class="text-muted">Published:</span> <span>${published}</span></li>` : ''}
+                    ${avgRating ? `<li class="d-flex justify-content-between py-0"><span class="text-muted">Avg Rating:</span> <span>${avgRating} / 5</span></li>` : ''}
+                    ${formattedDate ? `<li class="d-flex justify-content-between py-0"><span class="text-muted">Added:</span> <span>${formattedDate}</span></li>` : ''}
+                    <li class="d-flex justify-content-between py-0"><span class="text-muted">My Rating:</span> <span>${myRatingHtml}</span></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
