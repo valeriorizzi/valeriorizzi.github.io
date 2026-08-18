@@ -2,9 +2,8 @@ name: Update Google Scholar Stats
 
 on:
   schedule:
-    # Runs on the 1st of every month to avoid IP blocks
     - cron: '0 0 1 * *'
-  workflow_dispatch: # Allows manual triggers
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -23,36 +22,43 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install scholarly matplotlib
+          pip install google-search-results matplotlib
 
-      - name: Fetch Stats and Generate SVG
+      - name: Fetch Stats via SerpApi and Generate SVG
         env:
-          SCHOLAR_ID: "HUdZjX4AAAAJ" # Replace with your Scholar ID
+          SCHOLAR_ID: "HUdZjX4AAAAJ"
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: |
           python - << 'EOF'
           import os
-          from scholarly import scholarly
           import matplotlib.pyplot as plt
+          from serpapi import GoogleSearch
 
-          scholar_id = os.environ['SCHOLAR_ID']
-          author = scholarly.search_author_id(scholar_id)
-          author = scholarly.fill(author, sections=['basics', 'indices', 'counts'])
+          params = {
+              "engine": "google_scholar_author",
+              "author_id": os.environ['SCHOLAR_ID'],
+              "api_key": os.environ['SERPAPI_KEY']
+          }
 
-          citations = author.get('citedby', 0)
-          hindex = author.get('hindex', 0)
-          i10index = author.get('i10index', 0)
-          cites_per_year = author.get('cites_per_year', {})
+          search = GoogleSearch(params)
+          results = search.get_dict()
 
-          # Filter recent years
-          years = sorted([y for y in cites_per_year.keys() if y >= 2018])
-          counts = [cites_per_year[y] for y in years]
+          table = results.get("table", {})
+          citations_info = table.get("citations", [])
 
-          # Render SVG Card
+          citations = citations_info[0].get("all", 0) if len(citations_info) > 0 else 0
+          hindex = citations_info[1].get("all", 0) if len(citations_info) > 1 else 0
+          i10index = citations_info[2].get("all", 0) if len(citations_info) > 2 else 0
+
+          graph = results.get("graph", [])
+          years = [int(item["year"]) for item in graph if int(item["year"]) >= 2018]
+          counts = [int(item["citations"]) for item in graph if int(item["year"]) >= 2018]
+
           fig, ax = plt.subplots(figsize=(6, 2.8), dpi=150)
           fig.patch.set_facecolor('#0d1117')
           ax.set_facecolor('#0d1117')
 
-          bars = ax.bar(years, counts, color='#58a6ff', width=0.55)
+          ax.bar(years, counts, color='#58a6ff', width=0.55)
           ax.tick_params(colors='#c9d1d9', labelsize=8)
           ax.spines['top'].set_visible(False)
           ax.spines['right'].set_visible(False)
