@@ -8,12 +8,41 @@ nav_order: 4
 
 ## Current Courses
 
-### Course Name 1
-*Spring 2026*
+### Advanced Modelling and Data Analysis for Pharmaceutical Sciences - 19H330 - University of Geneva
+*Spring 2023 - Present*
 
-Overview of the course topics and requirements.
+<a href="https://moodle.unige.ch/course/view.php?id=8167" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0 me-1" role="button">
+  <i class="fa-solid fa-graduation-cap"></i> Moodle
+</a>
+<a href="https://github.com/obzehn/advanced_modelling_for_pharma" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">
+  <i class="fa-brands fa-github"></i> GitHub
+</a>
 
-<a href="https://moodle.unige.ch/course/view.php?id=12345" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">
+### TP de Chimie Thérapeutique R&D - Modélisation - 13H903 - University of Geneva
+*Spring 2023 - Present*
+
+<a href="https://moodle.unige.ch/course/view.php?id=16689" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">
+  <i class="fa-solid fa-graduation-cap"></i> Moodle
+</a>
+
+### Modélisation et Analyse de Données - 14H120 - University of Geneva
+*Spring 2023 - Present*
+
+<a href="https://moodle.unige.ch/course/view.php?id=12334" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">
+  <i class="fa-solid fa-graduation-cap"></i> Moodle
+</a>
+
+### Projet interdisciplinaire - 14H907 - University of Geneva
+*Spring 2025 - Present*
+
+<a href="https://moodle.unige.ch/course/view.php?id=3446" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">
+  <i class="fa-solid fa-graduation-cap"></i> Moodle
+</a>
+
+### TD Introduction à la recherche bibliographique - 13H900 - University of Geneva
+*Spring 2024 - Present*
+
+<a href="https://moodle.unige.ch/course/view.php?id=8565" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">
   <i class="fa-solid fa-graduation-cap"></i> Moodle
 </a>
 
@@ -21,11 +50,10 @@ Overview of the course topics and requirements.
 
 ## Past Courses
 
-### Course Name 2
-*Autumn 2025*
+###  Fluiid Mechanics - AMA2005 - Queen’s University Belfast
+*Autumn 2014 - Autumn 2016*
 
-Past course material archive.
+###  Quantum Theory - AMA3002 - Queen’s University Belfast
+*Autumn 2013 - Autumn 2015*
 
-<a href="https://moodle.unige.ch/course/view.php?id=67890" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">
-  <i class="fa-solid fa-graduation-cap"></i> Moodle Archive
-</a>
+
