@@ -17,7 +17,7 @@ nav_order: 4
 <a href="https://moodle.unige.ch/course/view.php?id=8167" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0 me-1" role="button">
   <i class="fa-solid fa-graduation-cap"></i> Moodle
 </a>
-<a href="https://github.com/obzehn/advanced_modelling_for_pharma" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">
+<a href="https://obzehn.github.io/advanced_modelling_for_pharma/" target="_blank" rel="noopener noreferrer" class="btn btn-sm z-depth-0" role="button">
   <i class="fa-brands fa-github"></i> GitHub
 </a>
 
