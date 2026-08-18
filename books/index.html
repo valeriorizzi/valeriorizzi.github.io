@@ -12,7 +12,7 @@
     cursor: pointer !important;
   }
 
-  /* Fixed title line-clamping with ellipsis */
+  /* Title styling with strict 2-line clamp and fixed height to prevent layout breaks */
   .book-card-title {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -22,6 +22,7 @@
     word-break: break-word;
     font-size: 0.82rem;
     line-height: 1.25;
+    height: 2.5em; /* Fixed height for 2 lines to align cards perfectly */
   }
 </style> <div class="goodreads-shelf mb-5"> <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center mb-3 border-bottom pb-2"> <h3 class="font-weight-bold mb-2 mb-sm-0" style="font-size: 1.25rem;">Bookshelf</h3> <div id="goodreads-controls" class="d-flex flex-wrap align-items-center" style="display: none;"> <div class="btn-group btn-group-sm mr-2 mb-1" role="group" aria-label="Sort Order"> <button type="button" class="btn btn-outline-secondary" id="btn-recent">Most Recent</button> <button type="button" class="btn btn-outline-secondary active" id="btn-random">Random</button> </div> <div class="btn-group btn-group-sm mb-1" role="group" aria-label="Rating Filter"> <button type="button" class="btn btn-outline-secondary active" id="btn-all-stars">All Books</button> <button type="button" class="btn btn-outline-secondary" id="btn-5-stars">★ 5 Stars Only</button> </div> </div> </div> <div id="goodreads-recent" class="row"> <div class="col-12 text-center py-4"> <div class="spinner-border text-secondary" role="status"> <span class="sr-only">Loading books...</span> </div> </div> </div> </div> <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -100,7 +101,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const displayBooks = filtered.slice(0, MAX_BOOKS);
 
     container.innerHTML = displayBooks.map(item => {
-      const title = getTagText(item, "title") || "Untitled";
+      const rawTitle = getTagText(item, "title") || "Untitled";
+      
+      // Strip parenthetical series metadata (e.g. "(La saga di Geralt di Rivia, #6)")
+      let title = rawTitle.replace(/\s*\([^)]*\)/g, "").trim();
+      
+      // Hard length limit fallback to prevent overflow on extra long titles
+      const MAX_TITLE_LEN = 55;
+      if (title.length > MAX_TITLE_LEN) {
+        title = title.substring(0, MAX_TITLE_LEN).trim() + "…";
+      }
+
       const link = getTagText(item, "link") || "#";
       const author = getTagText(item, "author_name") || "Unknown Author";
       const published = getTagText(item, "book_published");
@@ -144,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <div class="col-8 pl-2 pr-2" style="min-width: 0;">
                 <div class="card-body p-0 d-flex flex-column justify-content-between h-100">
                   <div>
-                    <h6 class="card-title font-weight-bold mb-1 book-card-title" title="${title}">${title}</h6>
+                    <h6 class="card-title font-weight-bold mb-1 book-card-title" title="${rawTitle}">${title}</h6>
                     <p class="text-secondary mb-2" style="font-size: 0.75rem; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">by <strong>${author}</strong></p>
                   </div>
 
