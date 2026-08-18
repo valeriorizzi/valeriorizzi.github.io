@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Default Configurations: Fully random selection out of all read books
   let currentMode = "random";  // "random" or "recent"
   let onlyFiveStars = false;   // false for all read books, true to filter 5 stars
-  const MAX_BOOKS = 10;
+  const MAX_BOOKS = 12;
 
   let cachedItems = [];
 
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function() {
       let title = rawTitle.replace(/\s*\([^)]*\)/g, "").trim();
       
       // Hard length limit fallback to prevent overflow on extra long titles
-      const MAX_TITLE_LEN = 55;
+      const MAX_TITLE_LEN = 35;
       if (title.length > MAX_TITLE_LEN) {
         title = title.substring(0, MAX_TITLE_LEN).trim() + "…";
       }
