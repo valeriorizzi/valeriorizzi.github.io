@@ -2,9 +2,12 @@ name: Update Google Scholar Stats
 
 on:
   schedule:
-    # Runs daily at midnight UTC
-    - cron: '0 0 * * *'
-  workflow_dispatch: # Allows manual trigger from GitHub UI
+    # Runs on the 1st of every month to avoid IP blocks
+    - cron: '0 0 1 * *'
+  workflow_dispatch: # Allows manual triggers
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -13,16 +16,61 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Generate Google Scholar Card
-        uses: techinpark/google-scholar-stats@v1
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          scholar_id: HUdZjX4AAAAJ # Replace with your 12-character Scholar Profile ID
-          output_path: assets/img/scholar_stats.svg
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install scholarly matplotlib
+
+      - name: Fetch Stats and Generate SVG
+        env:
+          SCHOLAR_ID: "HUdZjX4AAAAJ" # Replace with your Scholar ID
+        run: |
+          python - << 'EOF'
+          import os
+          from scholarly import scholarly
+          import matplotlib.pyplot as plt
+
+          scholar_id = os.environ['SCHOLAR_ID']
+          author = scholarly.search_author_id(scholar_id)
+          author = scholarly.fill(author, sections=['basics', 'indices', 'counts'])
+
+          citations = author.get('citedby', 0)
+          hindex = author.get('hindex', 0)
+          i10index = author.get('i10index', 0)
+          cites_per_year = author.get('cites_per_year', {})
+
+          # Filter recent years
+          years = sorted([y for y in cites_per_year.keys() if y >= 2018])
+          counts = [cites_per_year[y] for y in years]
+
+          # Render SVG Card
+          fig, ax = plt.subplots(figsize=(6, 2.8), dpi=150)
+          fig.patch.set_facecolor('#0d1117')
+          ax.set_facecolor('#0d1117')
+
+          bars = ax.bar(years, counts, color='#58a6ff', width=0.55)
+          ax.tick_params(colors='#c9d1d9', labelsize=8)
+          ax.spines['top'].set_visible(False)
+          ax.spines['right'].set_visible(False)
+          ax.spines['bottom'].set_color('#30363d')
+          ax.spines['left'].set_color('#30363d')
+
+          ax.set_title(f"Citations: {citations}  |  h-index: {hindex}  |  i10-index: {i10index}", 
+                       color='#f0f6fc', fontsize=10, fontweight='bold', pad=12)
+
+          os.makedirs('assets/img', exist_ok=True)
+          plt.savefig('assets/img/scholar_stats.svg', bbox_inches='tight', transparent=False)
+          print("Successfully generated assets/img/scholar_stats.svg")
+          EOF
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/img/scholar_stats.svg
-          git diff-index --quiet HEAD || git commit -m "Updated Google Scholar stats"
+          git diff-index --quiet HEAD || git commit -m "Update Google Scholar stats SVG"
           git push
