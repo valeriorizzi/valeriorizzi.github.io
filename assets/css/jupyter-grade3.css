@@ -575,6 +575,11 @@ mark,
   padding: 0.15em;
 }
 
+a.text-warning,
+a.text-warning:hover {
+  color: #828892;
+}
+
 #toc a,
 .toc {
   color: #303030 !important;
