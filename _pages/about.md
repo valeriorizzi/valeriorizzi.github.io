@@ -31,7 +31,7 @@ latest_posts:
 <style>
   /* Slightly scales down the profile image from al-folio default */
   .profile img {
-    max-width: 82% !important;
+    max-width: 68% !important;
     margin: 0 auto;
     display: block;
   }
@@ -41,17 +41,19 @@ I am a computational scientist and method developer at the University of Geneva,
 
 <!-- Scholar Metrics & Publications CTA -->
 <div class="scholar-section mt-4 pt-3 border-top text-center">
-  <small class="text-muted d-block mb-2 font-weight-bold" style="letter-spacing: 0.5px; text-transform: uppercase; font-size: 0.75rem;">
+  <small class="text-muted d-block mb-3 font-weight-bold" style="letter-spacing: 0.5px; text-transform: uppercase; font-size: 0.75rem;">
     Google Scholar Impact & Metrics
   </small>
   
-  <div class="mb-3">
-    <img src="/assets/img/scholar_stats.svg" class="img-fluid rounded" alt="Google Scholar Stats" style="width: 100%; max-width: 280px;">
-  </div>
+  <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center" style="gap: 1.25rem;">
+    <div>
+      <img src="/assets/img/scholar_stats.svg" class="img-fluid rounded" alt="Google Scholar Stats" style="width: 100%; max-width: 320px;">
+    </div>
 
-  <div>
-    <a href="{{ '/publications/' | relative_url }}" class="btn btn-outline-primary btn-sm">
-      View All Publications &rarr;
-    </a>
+    <div>
+      <a href="{{ '/publications/' | relative_url }}" class="btn btn-outline-primary btn-sm">
+        View All Publications &rarr;
+      </a>
+    </div>
   </div>
 </div>
