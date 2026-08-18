@@ -28,7 +28,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a computational scientist and method developer at the University of Geneva, working at the intersection of statistical mechanics, biophysics and computational chemistry. My research focuses on advancing molecular dynamics simulations by developing enhanced sampling methodologies, particularly the OneOPES framework, and data-driven collective variables. Through the integration of statistical theory and efficient software implementation, I seek to overcome the timescale limitations of classical atomistic simulations, enabling the systematic exploration of complex energy landscapes
+I am a computational scientist and method developer at the University of Geneva, working at the intersection of statistical mechanics, biophysics and computational chemistry. My research focuses on advancing molecular dynamics simulations by developing enhanced sampling methodologies, particularly the OneOPES framework, and data-driven collective variables. Through the integration of statistical theory and efficient software implementation, I seek to overcome the timescale limitations of classical atomistic simulations, enabling the exploration and convergence of complex free energy landscapes.
 
 <!-- Button linking to all publications -->
 <div class="more-info" style="text-align: center; margin-top: 20px;">
