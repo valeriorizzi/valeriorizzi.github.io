@@ -9,8 +9,9 @@ collection: books
 <div id="goodreads-recent" class="row mt-3"></div>
 
 <script>
-  const GOODREADS_RSS = "https://www.goodreads.com/review/list_rss/28031214-valerio?shelf=read";
-  const MAX_AGE_DAYS = 360;
+  // Appended &per_page=100 to override Goodreads' default 10-item limit
+  const GOODREADS_RSS = "https://www.goodreads.com/review/list_rss/28031214-valerio?shelf=read&per_page=100";
+  const MAX_AGE_DAYS = 180;
   const MAX_BOOKS = 20;
 
   fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(GOODREADS_RSS)}`)
@@ -40,7 +41,7 @@ collection: books
         const doc = parser.parseFromString(book.description, 'text/html');
         const htmlContent = doc.body.innerHTML;
 
-        // Extract and clean up cover image for maximum resolution
+        // Extract cover image and attempt to remove thumbnail sizing parameters
         const imgTag = doc.querySelector('img');
         let coverUrl = imgTag ? imgTag.src : (book.thumbnail || '');
         coverUrl = coverUrl
@@ -49,7 +50,7 @@ collection: books
           .replace(/\._U[XY]\d+_/g, '');
         const isNoPhoto = !coverUrl || coverUrl.includes('nophoto');
 
-        // Extract individual fields using exact regex matching on HTML string
+        // Extract individual fields using exact regex matching
         const parseField = (regex) => {
           const match = htmlContent.match(regex);
           return (match && match[1] && match[1].trim() !== '') ? match[1].trim() : null;
@@ -85,7 +86,7 @@ collection: books
                 <ul class="list-unstyled small border-top pt-2 mb-0">
                   ${published ? `<li class="d-flex justify-content-between py-1"><span class="text-muted">Published:</span> <strong>${published}</strong></li>` : ''}
                   ${avgRating ? `<li class="d-flex justify-content-between py-1"><span class="text-muted">Avg Rating:</span> <strong>${avgRating} / 5</strong></li>` : ''}
-                  ${dateAdded ? `<li class="d-flex justify-content-between py-1"><span class="text-muted">Date Added:</span> <strong>${dateAdded}</strong></li>` : ''}
+                  ${dateAdded ? `<li class="d-flex justify-content-between py-1"><span class="text-muted">Added:</span> <strong>${dateAdded}</strong></li>` : ''}
                   <li class="d-flex justify-content-between py-1"><span class="text-muted">My Rating:</span> <span>${myRatingHtml}</span></li>
                 </ul>
               </div>
