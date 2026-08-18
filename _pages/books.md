@@ -15,7 +15,7 @@ collection: books
     cursor: pointer !important;
   }
 
-  /* Fixed title line-clamping with ellipsis */
+  /* Title styling with strict 2-line clamp and fixed height to prevent layout breaks */
   .book-card-title {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -25,6 +25,7 @@ collection: books
     word-break: break-word;
     font-size: 0.82rem;
     line-height: 1.25;
+    height: 2.5em; /* Fixed height for 2 lines to align cards perfectly */
   }
 </style>
 
@@ -132,7 +133,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const displayBooks = filtered.slice(0, MAX_BOOKS);
 
     container.innerHTML = displayBooks.map(item => {
-      const title = getTagText(item, "title") || "Untitled";
+      const rawTitle = getTagText(item, "title") || "Untitled";
+      
+      // Strip parenthetical series metadata (e.g. "(La saga di Geralt di Rivia, #6)")
+      let title = rawTitle.replace(/\s*\([^)]*\)/g, "").trim();
+      
+      // Hard length limit fallback to prevent overflow on extra long titles
+      const MAX_TITLE_LEN = 55;
+      if (title.length > MAX_TITLE_LEN) {
+        title = title.substring(0, MAX_TITLE_LEN).trim() + "…";
+      }
+
       const link = getTagText(item, "link") || "#";
       const author = getTagText(item, "author_name") || "Unknown Author";
       const published = getTagText(item, "book_published");
@@ -176,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <div class="col-8 pl-2 pr-2" style="min-width: 0;">
                 <div class="card-body p-0 d-flex flex-column justify-content-between h-100">
                   <div>
-                    <h6 class="card-title font-weight-bold mb-1 book-card-title" title="${title}">${title}</h6>
+                    <h6 class="card-title font-weight-bold mb-1 book-card-title" title="${rawTitle}">${title}</h6>
                     <p class="text-secondary mb-2" style="font-size: 0.75rem; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">by <strong>${author}</strong></p>
                   </div>
 
