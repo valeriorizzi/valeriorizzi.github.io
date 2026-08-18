@@ -31,34 +31,72 @@ jobs:
         run: |
           python - << 'EOF'
           import os
+          import sys
           import matplotlib.pyplot as plt
           from serpapi import GoogleSearch
 
+          api_key = os.environ.get('SERPAPI_KEY', '').strip()
+          scholar_id = os.environ.get('SCHOLAR_ID', '').strip()
+
+          if not api_key:
+              print("ERROR: SERPAPI_KEY secret is missing or empty in GitHub Secrets!")
+              sys.exit(1)
+
           params = {
               "engine": "google_scholar_author",
-              "author_id": os.environ['SCHOLAR_ID'],
-              "api_key": os.environ['SERPAPI_KEY']
+              "author_id": scholar_id,
+              "api_key": api_key
           }
 
           search = GoogleSearch(params)
           results = search.get_dict()
 
-          table = results.get("table", {})
-          citations_info = table.get("citations", [])
+          if "error" in results:
+              print(f"SERPAPI API ERROR: {results['error']}")
+              sys.exit(1)
 
-          citations = citations_info[0].get("all", 0) if len(citations_info) > 0 else 0
-          hindex = citations_info[1].get("all", 0) if len(citations_info) > 1 else 0
-          i10index = citations_info[2].get("all", 0) if len(citations_info) > 2 else 0
+          cited_by = results.get("cited_by", {})
+          table = cited_by.get("table", [])
 
-          graph = results.get("graph", [])
-          years = [int(item["year"]) for item in graph if int(item["year"]) >= 2018]
-          counts = [int(item["citations"]) for item in graph if int(item["year"]) >= 2018]
+          citations, hindex, i10index = 0, 0, 0
 
+          if isinstance(table, list):
+              for entry in table:
+                  if "citations" in entry:
+                      citations = entry["citations"].get("all", 0)
+                  elif "h_index" in entry:
+                      hindex = entry["h_index"].get("all", 0)
+                  elif "i10_index" in entry:
+                      i10index = entry["i10_index"].get("all", 0)
+          elif isinstance(table, dict):
+              citations = table.get("citations", {}).get("all", 0)
+              hindex = table.get("h_index", {}).get("all", 0)
+              i10index = table.get("i10_index", {}).get("all", 0)
+
+          graph = cited_by.get("graph", [])
+          years, counts = [], []
+          if isinstance(graph, list):
+              for item in graph:
+                  if "year" in item and "citations" in item:
+                      y = int(item["year"])
+                      if y >= 2018:
+                          years.append(y)
+                          counts.append(int(item["citations"]))
+
+          print(f"Extracted Metrics -> Citations: {citations}, h-index: {hindex}, i10-index: {i10index}")
+
+          if citations == 0 and hindex == 0:
+              print("ERROR: Citation parsing returned zeros. Full response keys:", list(results.keys()))
+              sys.exit(1)
+
+          # Render SVG Card
           fig, ax = plt.subplots(figsize=(6, 2.8), dpi=150)
           fig.patch.set_facecolor('#0d1117')
           ax.set_facecolor('#0d1117')
 
-          ax.bar(years, counts, color='#58a6ff', width=0.55)
+          if years and counts:
+              ax.bar(years, counts, color='#58a6ff', width=0.55)
+
           ax.tick_params(colors='#c9d1d9', labelsize=8)
           ax.spines['top'].set_visible(False)
           ax.spines['right'].set_visible(False)
@@ -78,5 +116,8 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/img/scholar_stats.svg
-          git diff-index --quiet HEAD || git commit -m "Update Google Scholar stats SVG"
-          git push
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Update Google Scholar stats SVG"
+            git pull --rebase origin main
+            git push
+          fi
