@@ -7,6 +7,27 @@ nav_order: 6
 collection: books
 ---
 
+<style>
+  /* Pointer (hand) cursor for all buttons and interactive controls */
+  .btn,
+  .btn-group .btn,
+  #goodreads-controls button {
+    cursor: pointer !important;
+  }
+
+  /* Fixed title line-clamping with ellipsis */
+  .book-card-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    font-size: 0.82rem;
+    line-height: 1.25;
+  }
+</style>
+
 <div class="goodreads-shelf mb-5">
   <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center mb-3 border-bottom pb-2">
     <h3 class="font-weight-bold mb-2 mb-sm-0" style="font-size: 1.25rem;">Bookshelf</h3>
@@ -14,12 +35,12 @@ collection: books
     <!-- Dynamic Filter & Sort Controls -->
     <div id="goodreads-controls" class="d-flex flex-wrap align-items-center" style="display: none;">
       <div class="btn-group btn-group-sm mr-2 mb-1" role="group" aria-label="Sort Order">
-        <button type="button" class="btn btn-outline-secondary active" id="btn-recent">Most Recent</button>
-        <button type="button" class="btn btn-outline-secondary" id="btn-random">Random</button>
+        <button type="button" class="btn btn-outline-secondary" id="btn-recent">Most Recent</button>
+        <button type="button" class="btn btn-outline-secondary active" id="btn-random">Random</button>
       </div>
       <div class="btn-group btn-group-sm mb-1" role="group" aria-label="Rating Filter">
-        <button type="button" class="btn btn-outline-secondary" id="btn-all-stars">All Books</button>
-        <button type="button" class="btn btn-outline-secondary active" id="btn-5-stars">★ 5 Stars Only</button>
+        <button type="button" class="btn btn-outline-secondary active" id="btn-all-stars">All Books</button>
+        <button type="button" class="btn btn-outline-secondary" id="btn-5-stars">★ 5 Stars Only</button>
       </div>
     </div>
   </div>
@@ -38,9 +59,9 @@ collection: books
 document.addEventListener("DOMContentLoaded", function() {
   const GOODREADS_RSS = "https://www.goodreads.com/review/list_rss/28031214-valerio?shelf=read";
   
-  // Default Configurations
-  let currentMode = "recent";  // "recent" or "random"
-  let onlyFiveStars = true;    // true to filter by 5-star ratings, false for all
+  // Default Configurations: Fully random selection out of all read books
+  let currentMode = "random";  // "random" or "recent"
+  let onlyFiveStars = false;   // false for all read books, true to filter 5 stars
   const MAX_BOOKS = 10;
 
   let cachedItems = [];
@@ -155,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <div class="col-8 pl-2 pr-2" style="min-width: 0;">
                 <div class="card-body p-0 d-flex flex-column justify-content-between h-100">
                   <div>
-                    <h6 class="card-title font-weight-bold mb-1" style="font-size: 0.82rem; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; word-break: break-word;" title="${title}">${title}</h6>
+                    <h6 class="card-title font-weight-bold mb-1 book-card-title" title="${title}">${title}</h6>
                     <p class="text-secondary mb-2" style="font-size: 0.75rem; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">by <strong>${author}</strong></p>
                   </div>
 
