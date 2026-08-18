@@ -47,7 +47,7 @@ I am a computational scientist and method developer at the University of Geneva,
   
   <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center" style="gap: 1.25rem;">
     <div>
-      <img src="/assets/img/scholar_stats.svg" class="img-fluid rounded" alt="Google Scholar Stats" style="width: 100%; max-width: 260px;">
+      <img src="/assets/img/scholar_stats.svg" class="img-fluid rounded" alt="Google Scholar Stats" style="width: 100%; max-width: 320px;">
     </div>
 
     <div>
