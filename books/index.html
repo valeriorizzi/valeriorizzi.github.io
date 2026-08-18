@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Configuration options:
   // DISPLAY_MODE: "random" for random selection, "recent" for most recent
   const DISPLAY_MODE = "random"; 
-  const MAX_BOOKS = 12;
+  const MAX_BOOKS = 10;
 
   // Fallback array of CORS proxies in case one is blocked
   const PROXIES = [
@@ -99,19 +99,19 @@ document.addEventListener("DOMContentLoaded", function() {
       return `
         <div class="col-md-6 mb-3">
           <div class="card h-100 shadow-sm border p-2">
-            <div class="row no-gutters align-items-center h-100">
-              <div class="col-4 text-center">
+            <div class="row no-gutters align-items-center flex-nowrap h-100">
+              <div class="col-4 text-center pr-1 flex-shrink-0">
                 <a href="${link}" target="_blank" rel="noopener noreferrer" class="d-block p-1">
                   ${!isNoPhoto 
-                    ? `<img src="${coverUrl}" class="img-fluid rounded" alt="${title}" style="max-height: 120px; object-fit: contain;">` 
+                    ? `<img src="${coverUrl}" class="img-fluid rounded" alt="${title}" style="max-height: 145px; object-fit: contain;">` 
                     : `<div class="p-2 bg-light rounded text-muted extra-small border">No Cover</div>`}
                 </a>
               </div>
-              <div class="col-8 pl-2 pr-2">
+              <div class="col-8 pl-2 pr-2" style="min-width: 0;">
                 <div class="card-body p-0 d-flex flex-column justify-content-between h-100">
                   <div>
-                    <h6 class="card-title font-weight-bold mb-1" style="font-size: 0.85rem; line-height: 1.2;">${title}</h6>
-                    <p class="text-secondary mb-2" style="font-size: 0.75rem;">by <strong>${author}</strong></p>
+                    <h6 class="card-title font-weight-bold mb-1" style="font-size: 0.82rem; line-height: 1.25; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; word-break: break-word;" title="${title}">${title}</h6>
+                    <p class="text-secondary mb-2" style="font-size: 0.75rem; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">by <strong>${author}</strong></p>
                   </div>
 
                   <ul class="list-unstyled border-top pt-1 mb-0" style="font-size: 0.72rem;">
