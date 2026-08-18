@@ -10,7 +10,6 @@ collection: books
 <div id="goodreads-recent" class="row mt-3"></div>
 
 <script>
-  // Appended &per_page=100 to override Goodreads' default 10-item limit
   const GOODREADS_RSS = "https://www.goodreads.com/review/list_rss/28031214-valerio?shelf=read&per_page=100";
   const MAX_AGE_DAYS = 180;
   const MAX_BOOKS = 20;
@@ -51,7 +50,7 @@ collection: books
           .replace(/\._U[XY]\d+_/g, '');
         const isNoPhoto = !coverUrl || coverUrl.includes('nophoto');
 
-        // Extract individual fields using exact regex matching
+        // Helper function for regex matching
         const parseField = (regex) => {
           const match = htmlContent.match(regex);
           return (match && match[1] && match[1].trim() !== '') ? match[1].trim() : null;
@@ -60,7 +59,9 @@ collection: books
         const author = parseField(/author:\s*([^<]+)/i) || book.author || 'Unknown Author';
         const published = parseField(/book published:\s*([^<]+)/i);
         const avgRating = parseField(/average rating:\s*([\d\.]+)/i);
-        const myRatingVal = parseField(/rating:\s*(\d+)/i);
+        
+        // Match "rating:" only when NOT preceded by "average "
+        const myRatingVal = parseField(/(?<!average\s)rating:\s*(\d+)/i);
         const dateAdded = parseField(/date added:\s*([^<]+)/i);
 
         // Format star rating
