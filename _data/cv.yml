@@ -1,7 +1,7 @@
 cv:
   name: Valerio Rizzi
   label: Senior Researcher (Collaborateur scientifique II)
-  email: valerio.rizzi@unige.ch
+  email: "{{ site.data.socials.email }}"
   institution: Biomolecular & Pharmaceutical Modelling Group, University of Geneva
   location: CMU, B09.2018.a
   image: ""
