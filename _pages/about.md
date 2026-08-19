@@ -6,8 +6,8 @@ subtitle: Senior Researcher (CS II), University of Geneva
 
 profile:
   align: right
-  image: DSC_9398_red.jpg #prof_pic.jpg
-  image_circular: true # crops the image to make it circular  
+  image: DSC_9398_red.jpg
+  image_circular: true
   more_info: >
     <p>Biomolecular & Pharmaceutical Modelling group, <a href="https://farma-unites.unige.ch/en/gervasio-lab/" target="_blank" rel="noopener noreferrer">Gervasio Lab</a>,</p>
     <p><a href="https://ispso.unige.ch/en" target="_blank" rel="noopener noreferrer">Section of Pharmaceutical Sciences</a>, University of Geneva</p>
@@ -16,22 +16,21 @@ profile:
     <p><b>Office:</b> <a href="https://ispso.unige.ch/en/contacts/contact-us" target="_blank" rel="noopener noreferrer">CMU</a>, B09.2018.a</p>
     <p><b>Phone:</b> +41 (0)22 379 33 98</p>        
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true # <--- Keeps the vertical list inside the right profile card automatically
 
 announcements:
-  enabled: false # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
+  scrollable: true
+  limit: 5
 
 latest_posts:
   enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 3
 ---
 
 <style>
-  /* Slightly scales down the profile image from al-folio default */
   .profile img {
     max-width: 82% !important;
     margin: 0 auto;
@@ -40,6 +39,9 @@ latest_posts:
 </style>
 
 I am a computational scientist and method developer at the University of Geneva, working at the intersection of statistical mechanics, biophysics and computational chemistry. My research focuses on advancing molecular dynamics simulations by developing enhanced sampling methodologies, particularly the OneOPES framework, and data-driven collective variables. Through the integration of statistical theory and efficient software implementation, I seek to overcome the timescale limitations of classical atomistic simulations, enabling the exploration and convergence of complex free energy landscapes.
+
+<!-- PLACEMENT OPTION B: Place here if you want it directly in the main body text -->
+<!-- {% include social.html %} -->
 
 <!-- Scholar Metrics & Publications CTA -->
 <div class="scholar-section mt-4 pt-3 border-top text-center">
