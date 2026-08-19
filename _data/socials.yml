@@ -4,13 +4,18 @@
 #cv_pdf:                 #/assets/pdf/example_pdf.pdf # path to your CV PDF file
 email: "valerio.rizzi [at] unige.ch"
 scholar_userid: HUdZjX4AAAAJ # your Google Scholar ID
+custom_social:
+  web_of_science:
+    logo: "https://cdn.simpleicons.org/clarivate"
+    title: "Web of Science"
+    url: "https://www.webofscience.com/wos/author/rid/GXA-0661-2022"
 orcid_id: 0000-0001-5126-8996
-researcher_id: "GXA-0661-2022"
 github_username: valeriorizzi
 linkedin_username: valerio-rizzi-61b345180
 scopus_id: 57206725975
 research_gate_profile: "Valerio-Rizzi"
 x_username: ValerioRizzi33
+
 
 # bluesky_url: "valeriorizzi.bsky.social"
 #inspirehep_id:  # Inspire HEP author ID
