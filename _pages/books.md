@@ -11,7 +11,8 @@ collection: books
   /* Pointer (hand) cursor for all buttons and interactive controls */
   .btn,
   .btn-group .btn,
-  #goodreads-controls button {
+  #goodreads-controls button,
+  summary {
     cursor: pointer !important;
   }
 
@@ -30,28 +31,30 @@ collection: books
 </style>
 
 <div class="goodreads-shelf mb-5">
-  <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center mb-3 border-bottom pb-2">
-    <h3 class="font-weight-bold mb-2 mb-sm-0" style="font-size: 1.25rem;">Bookshelf</h3>
-    
-    <!-- Dynamic Filter & Sort Controls -->
-    <div id="goodreads-controls" class="d-flex flex-wrap align-items-center" style="display: none;">
-      <div class="btn-group btn-group-sm mr-2 mb-1" role="group" aria-label="Sort Order">
-        <button type="button" class="btn btn-outline-secondary" id="btn-recent">Most Recent</button>
-        <button type="button" class="btn btn-outline-secondary active" id="btn-random">Random</button>
-      </div>
-      <div class="btn-group btn-group-sm mb-1" role="group" aria-label="Rating Filter">
-        <button type="button" class="btn btn-outline-secondary active" id="btn-all-stars">All Books</button>
-        <button type="button" class="btn btn-outline-secondary" id="btn-5-stars">★ 5 Stars Only</button>
-      </div>
-    </div>
-  </div>
-
+  <!-- Book Grid -->
   <div id="goodreads-recent" class="row">
     <div class="col-12 text-center py-4">
       <div class="spinner-border text-secondary" role="status">
         <span class="sr-only">Loading books...</span>
       </div>
     </div>
+  </div>
+
+  <!-- Discrete View Options at Bottom -->
+  <div class="mt-4 pt-3 border-top text-center" id="goodreads-controls-wrapper" style="display: none;">
+    <details class="d-inline-block">
+      <summary class="btn btn-sm btn-outline-secondary">Change view</summary>
+      <div id="goodreads-controls" class="d-flex flex-wrap align-items-center justify-content-center mt-3">
+        <div class="btn-group btn-group-sm mr-2 mb-1" role="group" aria-label="Sort Order">
+          <button type="button" class="btn btn-outline-secondary" id="btn-recent">Most Recent</button>
+          <button type="button" class="btn btn-outline-secondary active" id="btn-random">Random</button>
+        </div>
+        <div class="btn-group btn-group-sm mb-1" role="group" aria-label="Rating Filter">
+          <button type="button" class="btn btn-outline-secondary active" id="btn-all-stars">All Books</button>
+          <button type="button" class="btn btn-outline-secondary" id="btn-5-stars">★ 5 Stars Only</button>
+        </div>
+      </div>
+    </details>
   </div>
 </div>
 
@@ -211,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const btnRandom = document.getElementById("btn-random");
   const btnAllStars = document.getElementById("btn-all-stars");
   const btn5Stars = document.getElementById("btn-5-stars");
-  const feedControls = document.getElementById("goodreads-controls");
+  const feedControlsWrapper = document.getElementById("goodreads-controls-wrapper");
 
   if (btnRecent && btnRandom) {
     btnRecent.addEventListener("click", function() {
@@ -253,8 +256,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const xml = new DOMParser().parseFromString(xmlText, "text/xml");
     cachedItems = Array.from(xml.querySelectorAll("item"));
 
-    if (feedControls) {
-      feedControls.style.display = "flex";
+    if (feedControlsWrapper) {
+      feedControlsWrapper.style.display = "block";
     }
 
     renderBooks();
