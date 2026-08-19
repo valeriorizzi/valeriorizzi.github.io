@@ -41,11 +41,11 @@ latest_posts:
 
 I am a computational scientist and method developer at the University of Geneva, working at the intersection of statistical mechanics, biophysics and computational chemistry. My research focuses on advancing molecular dynamics simulations by developing enhanced sampling methodologies, particularly the OneOPES framework, and data-driven collective variables. Through the integration of statistical theory and efficient software implementation, I seek to overcome the timescale limitations of classical atomistic simulations, enabling the exploration and convergence of complex free energy landscapes.
 
-<!-- Side-by-Side: Socials (Left) & Scholar Badge (Middle/Right) -->
-<div class="row align-items-start mt-4 pt-3 border-top">
+<!-- Side-by-Side: Socials & Scholar Badge via Flexbox -->
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #dee2e6;">
   
   <!-- Social List (Left) -->
-  <div class="col-6 text-start">
+  <div style="flex: 1; min-width: 240px;">
     <ul class="list-unstyled mb-0" style="font-size: 0.9rem;">
       <li class="mb-2">
         <a href="#" onclick="window.location.href='mailto:'+'valerio.rizzi'+'@'+'unige.ch'; return false;" class="text-decoration-none">
@@ -95,13 +95,13 @@ I am a computational scientist and method developer at the University of Geneva,
     </ul>
   </div>
 
-  <!-- Scholar Badge (Aligned to top) -->
-  <div class="col-6 text-center">
+  <!-- Scholar Badge (Middle) -->
+  <div style="flex: 1; min-width: 250px; max-width: 420px; text-align: center;">
     <small class="text-muted d-block mb-2 font-weight-bold" style="letter-spacing: 0.5px; text-transform: uppercase; font-size: 0.7rem;">
-      Google Scholar Impact & Metrics
+      Impact Metrics
     </small>
     <a href="https://scholar.google.com/citations?user=HUdZjX4AAAAJ" target="_blank" rel="noopener noreferrer" style="display: inline-block; width: 100%;">
-      <img src="/assets/img/scholar_stats.svg" class="img-fluid rounded mx-auto d-block" alt="Google Scholar Stats" style="width: 100%; max-width: 420px;">
+      <img src="/assets/img/scholar_stats.svg" class="img-fluid rounded mx-auto d-block" alt="Google Scholar Stats" style="width: 100%;">
     </a>
   </div>
 
