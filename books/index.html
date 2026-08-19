@@ -8,7 +8,8 @@
   /* Pointer (hand) cursor for all buttons and interactive controls */
   .btn,
   .btn-group .btn,
-  #goodreads-controls button {
+  #goodreads-controls button,
+  summary {
     cursor: pointer !important;
   }
 
@@ -24,7 +25,7 @@
     line-height: 1.25;
     height: 2.5em; /* Fixed height for 2 lines to align cards perfectly */
   }
-</style> <div class="goodreads-shelf mb-5"> <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center mb-3 border-bottom pb-2"> <h3 class="font-weight-bold mb-2 mb-sm-0" style="font-size: 1.25rem;">Bookshelf</h3> <div id="goodreads-controls" class="d-flex flex-wrap align-items-center" style="display: none;"> <div class="btn-group btn-group-sm mr-2 mb-1" role="group" aria-label="Sort Order"> <button type="button" class="btn btn-outline-secondary" id="btn-recent">Most Recent</button> <button type="button" class="btn btn-outline-secondary active" id="btn-random">Random</button> </div> <div class="btn-group btn-group-sm mb-1" role="group" aria-label="Rating Filter"> <button type="button" class="btn btn-outline-secondary active" id="btn-all-stars">All Books</button> <button type="button" class="btn btn-outline-secondary" id="btn-5-stars">★ 5 Stars Only</button> </div> </div> </div> <div id="goodreads-recent" class="row"> <div class="col-12 text-center py-4"> <div class="spinner-border text-secondary" role="status"> <span class="sr-only">Loading books...</span> </div> </div> </div> </div> <script>
+</style> <div class="goodreads-shelf mb-5"> <div id="goodreads-recent" class="row"> <div class="col-12 text-center py-4"> <div class="spinner-border text-secondary" role="status"> <span class="sr-only">Loading books...</span> </div> </div> </div> <div class="mt-4 pt-3 border-top text-center" id="goodreads-controls-wrapper" style="display: none;"> <details class="d-inline-block"> <summary class="btn btn-sm btn-outline-secondary">Change view</summary> <div id="goodreads-controls" class="d-flex flex-wrap align-items-center justify-content-center mt-3"> <div class="btn-group btn-group-sm mr-2 mb-1" role="group" aria-label="Sort Order"> <button type="button" class="btn btn-outline-secondary" id="btn-recent">Most Recent</button> <button type="button" class="btn btn-outline-secondary active" id="btn-random">Random</button> </div> <div class="btn-group btn-group-sm mb-1" role="group" aria-label="Rating Filter"> <button type="button" class="btn btn-outline-secondary active" id="btn-all-stars">All Books</button> <button type="button" class="btn btn-outline-secondary" id="btn-5-stars">★ 5 Stars Only</button> </div> </div> </details> </div> </div> <script>
 document.addEventListener("DOMContentLoaded", function() {
   const GOODREADS_RSS = "https://www.goodreads.com/review/list_rss/28031214-valerio?shelf=read";
   
@@ -179,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const btnRandom = document.getElementById("btn-random");
   const btnAllStars = document.getElementById("btn-all-stars");
   const btn5Stars = document.getElementById("btn-5-stars");
-  const feedControls = document.getElementById("goodreads-controls");
+  const feedControlsWrapper = document.getElementById("goodreads-controls-wrapper");
 
   if (btnRecent && btnRandom) {
     btnRecent.addEventListener("click", function() {
@@ -221,8 +222,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const xml = new DOMParser().parseFromString(xmlText, "text/xml");
     cachedItems = Array.from(xml.querySelectorAll("item"));
 
-    if (feedControls) {
-      feedControls.style.display = "flex";
+    if (feedControlsWrapper) {
+      feedControlsWrapper.style.display = "block";
     }
 
     renderBooks();
@@ -231,7 +232,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("goodreads-recent").innerHTML = "<div class='col-12'><p class='text-muted small'>Failed to load book feed.</p></div>";
   });
 });
-</script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Valerio Rizzi. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. Last updated: August 18, 2026. </div> </footer> <script>
+</script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Valerio Rizzi. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. Last updated: August 19, 2026. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
