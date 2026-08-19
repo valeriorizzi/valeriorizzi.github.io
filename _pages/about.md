@@ -14,20 +14,22 @@ profile:
     <hr style="border: none; border-top: 2px dashed #ccc; margin: 14px 0;">
     <p><b>Address:</b> rue Michel Servet 1, Geneva 1205, Switzerland</p>
     <p><b>Office:</b> <a href="https://ispso.unige.ch/en/contacts/contact-us" target="_blank" rel="noopener noreferrer">CMU</a>, B09.2018.a</p>
-    <p><b>Phone:</b> +41 (0)22 379 33 98</p>        
+    <p><b>Phone:</b> +41 (0)22 379 33 98</p>
+    <hr style="border: none; border-top: 2px dashed #ccc; margin: 14px 0;">
+    <ul class="list-unstyled mb-0 text-start" style="font-size: 0.9rem;">
+      <li class="mb-2"><a href="#" onclick="window.location.href='mailto:'+'valerio.rizzi'+'@'+'unige.ch'; return false;"><i class="fa-solid fa-envelope fa-fw me-2"></i>valerio.rizzi [at] unige.ch</a></li>
+      <li class="mb-2"><a href="https://scholar.google.com/citations?user=HUdZjX4AAAAJ" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar fa-fw me-2"></i>Google Scholar</a></li>
+      <li class="mb-2"><a href="https://orcid.org/0000-0001-5126-8996" target="_blank" rel="noopener noreferrer"><i class="ai ai-orcid fa-fw me-2"></i>ORCID</a></li>
+      <li class="mb-2"><a href="https://www.webofscience.com/wos/author/rid/GXA-0661-2022" target="_blank" rel="noopener noreferrer"><i class="ai ai-researcherid fa-fw me-2"></i>Web of Science</a></li>
+      <li class="mb-2"><a href="https://www.scopus.com/authid/detail.uri?authorId=57206725975" target="_blank" rel="noopener noreferrer"><i class="ai ai-scopus fa-fw me-2"></i>Scopus Profile</a></li>
+      <li class="mb-2"><a href="https://www.researchgate.net/profile/Valerio-Rizzi/" target="_blank" rel="noopener noreferrer"><i class="ai ai-researchgate fa-fw me-2"></i>ResearchGate</a></li>
+      <li class="mb-2"><a href="https://github.com/valeriorizzi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-fw me-2"></i>GitHub</a></li>
+      <li class="mb-2"><a href="https://www.linkedin.com/in/valerio-rizzi-61b345180" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-fw me-2"></i>LinkedIn</a></li>
+      <li class="mb-2"><a href="https://twitter.com/ValerioRizzi33" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter fa-fw me-2"></i>X (Twitter)</a></li>
+    </ul>
 
 selected_papers: true
-social: true
-
-announcements:
-  enabled: false
-  scrollable: true
-  limit: 5
-
-latest_posts:
-  enabled: false
-  scrollable: true
-  limit: 3
+social: false # Turned off so al-folio doesn't generate the bottom icon bar
 ---
 
 <style>
