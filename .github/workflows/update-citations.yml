@@ -1,4 +1,4 @@
-name: Update Google Scholar Citations
+name: Update Google Scholar Stats
 
 on:
   schedule:
@@ -7,95 +7,130 @@ on:
     - cron: "0 0 * * 5" # Friday
   workflow_dispatch:
 
-jobs:
-  update-citations:
-    runs-on: ubuntu-latest
+permissions:
+  contents: write
 
+jobs:
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
-      # See docs/CUSTOMIZE.md for details on how to set up PAT for triggering subsequent workflows
-      #        with:
-      #          token: ${{ secrets.PAT }}
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.13"
+          python-version: '3.x'
 
       - name: Install dependencies
         run: |
-          echo "🔧 Installing dependencies..."
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install google-search-results matplotlib
 
-      - name: Save current citations.yml hash
-        id: before
+      - name: Fetch Stats via SerpApi and Generate SVG
+        env:
+          SCHOLAR_ID: "HUdZjX4AAAAJ"
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: |
-          echo "📦 Checking existing citations.yml hash..."
-          if [ -f _data/citations.yml ]; then
-            sha_before=$(sha256sum _data/citations.yml | awk '{print $1}')
-            echo "sha_before=$sha_before" >> $GITHUB_OUTPUT
-            echo "📝 SHA before: $sha_before"
-          else
-            echo "sha_before=none" >> $GITHUB_OUTPUT
-            echo "📝 No existing citations.yml file found."
-          fi
+          python - << 'EOF'
+          import os
+          import sys
+          from datetime import datetime
+          import matplotlib.pyplot as plt
+          from serpapi import GoogleSearch
 
-      - name: Run citation update script
-        id: run_citation_update
-        shell: bash
-        run: |
-          set +e
-          echo "🚀 Running citation update script (single attempt)..."
-          start_time=$(date)
-          timeout 90 python bin/update_scholar_citations.py
-          status=$?
-          end_time=$(date)
-          if [ $status -eq 0 ]; then
-            echo "✅ Citation update succeeded (started at $start_time, ended at $end_time)."
-            echo "✅ Citation update succeeded." >> $GITHUB_STEP_SUMMARY
-          else
-            echo "❌ Citation update script failed with exit code $status (started at $start_time, ended at $end_time)."
-            echo "❌ Citation update script failed with exit code $status." >> $GITHUB_STEP_SUMMARY
-          fi
-          set -e
+          api_key = os.environ.get('SERPAPI_KEY', '').strip()
+          scholar_id = os.environ.get('SCHOLAR_ID', '').strip()
 
-      - name: Save new citations.yml hash
-        id: after
-        run: |
-          echo "🔍 Checking updated citations.yml hash..."
-          if [ -f _data/citations.yml ]; then
-            sha_after=$(sha256sum _data/citations.yml | awk '{print $1}')
-            echo "sha_after=$sha_after" >> $GITHUB_OUTPUT
-            echo "📝 SHA after: $sha_after"
-          else
-            echo "sha_after=none" >> $GITHUB_OUTPUT
-            echo "📝 citations.yml was not created or is missing."
-          fi
+          if not api_key:
+              print("ERROR: SERPAPI_KEY secret is missing or empty in GitHub Secrets!")
+              sys.exit(1)
 
-      - name: Report citations.yml change in summary
-        run: |
-          echo "📋 Comparing citation file hashes..."
-          if [ "${{ steps.before.outputs.sha_before }}" != "${{ steps.after.outputs.sha_after }}" ]; then
-            echo "✅ _data/citations.yml was updated."
-            echo "✅ _data/citations.yml was updated." >> $GITHUB_STEP_SUMMARY
-          else
-            echo "ℹ️ _data/citations.yml was not changed."
-            echo "ℹ️ _data/citations.yml was not changed." >> $GITHUB_STEP_SUMMARY
-          fi
+          params = {
+              "engine": "google_scholar_author",
+              "author_id": scholar_id,
+              "api_key": api_key
+          }
 
-      - name: Configure Git
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          echo "🔧 Git configured."
+          search = GoogleSearch(params)
+          results = search.get_dict()
 
-      - name: Commit and push if changed
+          if "error" in results:
+              print(f"SERPAPI API ERROR: {results['error']}")
+              sys.exit(1)
+
+          cited_by = results.get("cited_by", {})
+          table = cited_by.get("table", [])
+
+          citations, hindex, i10index = 0, 0, 0
+
+          if isinstance(table, list):
+              for entry in table:
+                  if "citations" in entry:
+                      citations = entry["citations"].get("all", 0)
+                  elif "h_index" in entry:
+                      hindex = entry["h_index"].get("all", 0)
+                  elif "i10_index" in entry:
+                      i10index = entry["i10_index"].get("all", 0)
+          elif isinstance(table, dict):
+              citations = table.get("citations", {}).get("all", 0)
+              hindex = table.get("h_index", {}).get("all", 0)
+              i10index = table.get("i10_index", {}).get("all", 0)
+
+          graph = cited_by.get("graph", [])
+          years, counts = [], []
+          if isinstance(graph, list):
+              for item in graph:
+                  if "year" in item and "citations" in item:
+                      y = int(item["year"])
+                      if y >= 2018:
+                          years.append(y)
+                          counts.append(int(item["citations"]))
+
+          print(f"Extracted Metrics -> Citations: {citations}, h-index: {hindex}, i10-index: {i10index}")
+
+          if citations == 0 and hindex == 0:
+              print("ERROR: Citation parsing returned zeros. Full response keys:", list(results.keys()))
+              sys.exit(1)
+
+          # Render SVG Card (Light Mode)
+          fig, ax = plt.subplots(figsize=(6, 2.8), dpi=150)
+          fig.patch.set_facecolor('#ffffff')
+          ax.set_facecolor('#ffffff')
+
+          if years and counts:
+              ax.bar(years, counts, color='#0969da', width=0.55)
+
+          ax.tick_params(colors='#24292e', labelsize=8)
+          ax.spines['top'].set_visible(False)
+          ax.spines['right'].set_visible(False)
+          ax.spines['bottom'].set_color('#d0d7de')
+          ax.spines['left'].set_color('#d0d7de')
+
+          # Axis Labels
+          ax.set_xlabel("Year", color='#57606a', fontsize=8, labelpad=6)
+          ax.set_ylabel("Citations", color='#57606a', fontsize=8, labelpad=4)
+
+          # Title
+          ax.set_title(f"Citations: {citations}  |  h-index: {hindex}  |  i10-index: {i10index}", 
+                       color='#1f2328', fontsize=10, fontweight='bold', pad=12)
+
+          # Date aligned horizontally with the 'Year' label on the far right
+          today_str = datetime.now().strftime('%Y-%m-%d')
+          ax.text(1.0, -0.18, f"Updated: {today_str}", transform=ax.transAxes, 
+                  fontsize=6.5, color='#57606a', ha='right', va='center')
+
+          os.makedirs('assets/img', exist_ok=True)
+          plt.savefig('assets/img/scholar_stats.svg', bbox_inches='tight', transparent=False)
+          print("Successfully generated assets/img/scholar_stats.svg")
+          EOF
+
+      - name: Commit and Push Changes
         run: |
-          git add _data/citations.yml
-          git diff --staged --quiet || (
-            echo "📤 Committing and pushing changes..."
-            git commit -m "Update Google Scholar citations"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/img/scholar_stats.svg
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Update Google Scholar stats SVG"
+            git pull --rebase origin main
             git push
-          )
+          fi
