@@ -8,9 +8,9 @@
   {% if site.data.socials.orcid_id %}
     <a href="https://orcid.org/{{ site.data.socials.orcid_id }}" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
   {% endif %}
-  {% if site.data.socials.researcher_id %}
-    <a href="https://www.webofscience.com/wos/author/rid/{{ site.data.socials.researcher_id }}" title="Web of Science" rel="external nofollow noopener" target="_blank"><i class="ai ai-researcherid"></i></a>
-  {% endif %}
+  {% if site.data.socials.custom_social.web_of_science %}
+    <a href="{{ site.data.socials.custom_social.web_of_science.url }}" title="Web of Science" rel="external nofollow noopener" target="_blank"><i class="ai ai-researcherid"></i></a>
+  {% endif %}  
   {% if site.data.socials.github_username %}
     <a href="https://github.com/{{ site.data.socials.github_username }}" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
   {% endif %}
