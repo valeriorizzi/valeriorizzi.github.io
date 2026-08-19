@@ -100,8 +100,8 @@ I am a computational scientist and method developer at the University of Geneva,
     <small class="text-muted d-block mb-2 font-weight-bold" style="letter-spacing: 0.5px; font-size: 0.72rem;">
       Google Scholar Impact & Metrics
     </small>
-    <a href="https://scholar.google.com/citations?user=HUdZjX4AAAAJ" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; min-width: 320px; max-width: 480px;">
-      <img src="/assets/img/scholar_stats.svg" class="img-fluid rounded mx-auto d-block" alt="Google Scholar Stats" style="width: 100%; min-width: 320px; max-width: 480px; height: auto;">
+    <a href="https://scholar.google.com/citations?user=HUdZjX4AAAAJ" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; min-width: 320px; max-width: 640px;">
+      <img src="/assets/img/scholar_stats.svg" class="img-fluid rounded mx-auto d-block" alt="Google Scholar Stats" style="width: 100%; min-width: 320px; max-width: 640px; height: auto;">
     </a>
   </div>
 
