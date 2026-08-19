@@ -9,12 +9,12 @@ profile:
   image: DSC_9398_red.jpg #prof_pic.jpg
   image_circular: true # crops the image to make it circular  
   more_info: >
-    <p><a href="https://farma-unites.unige.ch/en/gervasio-lab/" target="_blank" rel="noopener noreferrer">Biomolecular & Pharmaceutical Modelling</a>,</p>
-    <p>Gervasio Lab, University of Geneva</p>
+    <p>Biomolecular & Pharmaceutical Modelling group, <a href="https://farma-unites.unige.ch/en/gervasio-lab/" target="_blank" rel="noopener noreferrer">Gervasio Lab</a>,</p>
+    <p><a href="https://ispso.unige.ch/en" target="_blank" rel="noopener noreferrer">Section of Pharmaceutical Sciences</a>, University of Geneva</p>
     <hr style="border: none; border-top: 2px dashed #ccc; margin: 14px 0;">
     <p><b>Address:</b> rue Michel Servet 1, Geneva 1205, Switzerland</p>
-    <p><b>Office:</b> CMU, B09.2018.a</p>
-    <p><b>Phone:</b> +41 (0)22 379 33 98</p>    
+    <p><b>Office:</b> <a href="https://farma-unites.unige.ch/en/gervasio-lab/contact" target="_blank" rel="noopener noreferrer">CMU</a>, B09.2018.a</p>
+    <p><b>Phone:</b> +41 (0)22 379 33 98</p>        
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
