@@ -1,0 +1,26 @@
+<div class="contact-icons">
+  {% if site.data.socials.email %}
+    <a href="#" onclick="window.location.href='mailto:'+'valerio.rizzi'+'@'+'unige.ch'; return false;" title="Email"><i class="fa-solid fa-envelope"></i></a>
+  {% endif %}
+  {% if site.data.socials.scholar_userid %}
+    <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+  {% endif %}
+  {% if site.data.socials.orcid_id %}
+    <a href="https://orcid.org/{{ site.data.socials.orcid_id }}" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
+  {% endif %}
+  {% if site.data.socials.github_username %}
+    <a href="https://github.com/{{ site.data.socials.github_username }}" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
+  {% endif %}
+  {% if site.data.socials.linkedin_username %}
+    <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  {% endif %}
+  {% if site.data.socials.scopus_id %}
+    <a href="https://www.scopus.com/authid/detail.uri?authorId={{ site.data.socials.scopus_id }}" title="Scopus" rel="external nofollow noopener" target="_blank"><i class="ai ai-scopus"></i></a>
+  {% endif %}
+  {% if site.data.socials.research_gate_profile %}
+    <a href="https://www.researchgate.net/profile/{{ site.data.socials.research_gate_profile }}/" title="ResearchGate" rel="external nofollow noopener" target="_blank"><i class="ai ai-researchgate"></i></a>
+  {% endif %}
+  {% if site.data.socials.x_username %}
+    <a href="https://twitter.com/{{ site.data.socials.x_username }}" title="X" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+  {% endif %}
+</div>
