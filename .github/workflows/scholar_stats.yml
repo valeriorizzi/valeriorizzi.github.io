@@ -32,6 +32,7 @@ jobs:
           python - << 'EOF'
           import os
           import sys
+          from datetime import datetime
           import matplotlib.pyplot as plt
           from serpapi import GoogleSearch
 
@@ -89,22 +90,31 @@ jobs:
               print("ERROR: Citation parsing returned zeros. Full response keys:", list(results.keys()))
               sys.exit(1)
 
-          # Render SVG Card
+          # Render SVG Card (Light Mode)
           fig, ax = plt.subplots(figsize=(6, 2.8), dpi=150)
-          fig.patch.set_facecolor('#0d1117')
-          ax.set_facecolor('#0d1117')
+          fig.patch.set_facecolor('#ffffff')
+          ax.set_facecolor('#ffffff')
 
           if years and counts:
-              ax.bar(years, counts, color='#58a6ff', width=0.55)
+              ax.bar(years, counts, color='#0969da', width=0.55)
 
-          ax.tick_params(colors='#c9d1d9', labelsize=8)
+          ax.tick_params(colors='#24292e', labelsize=8)
           ax.spines['top'].set_visible(False)
           ax.spines['right'].set_visible(False)
-          ax.spines['bottom'].set_color('#30363d')
-          ax.spines['left'].set_color('#30363d')
+          ax.spines['bottom'].set_color('#d0d7de')
+          ax.spines['left'].set_color('#d0d7de')
 
+          # Axis Labels
+          ax.set_xlabel("Year", color='#57606a', fontsize=8, labelpad=4)
+          ax.set_ylabel("Citations", color='#57606a', fontsize=8, labelpad=4)
+
+          # Title
           ax.set_title(f"Citations: {citations}  |  h-index: {hindex}  |  i10-index: {i10index}", 
-                       color='#f0f6fc', fontsize=10, fontweight='bold', pad=12)
+                       color='#1f2328', fontsize=10, fontweight='bold', pad=12)
+
+          # Date in lower-right corner
+          today_str = datetime.now().strftime('%Y-%m-%d')
+          fig.text(0.98, 0.02, f"Updated: {today_str}", fontsize=6.5, color='#57606a', ha='right', va='bottom')
 
           os.makedirs('assets/img', exist_ok=True)
           plt.savefig('assets/img/scholar_stats.svg', bbox_inches='tight', transparent=False)
