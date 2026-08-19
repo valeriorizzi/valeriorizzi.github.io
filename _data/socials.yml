@@ -2,7 +2,7 @@
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
 #cv_pdf:                 #/assets/pdf/example_pdf.pdf # path to your CV PDF file
-email: valerio.rizzi@unige.ch # your email address
+email: "&#118;&#097;&#108;&#101;&#114;&#105;&#111;&#046;&#114;&#105;&#122;&#122;&#105;&#064;&#117;&#110;&#105;&#103;&#101;&#046;&#099;&#104;"
 scholar_userid: HUdZjX4AAAAJ # your Google Scholar ID
 orcid_id: 0000-0001-5126-8996
 github_username: valeriorizzi
@@ -10,8 +10,6 @@ linkedin_username: valerio-rizzi-61b345180
 scopus_id: 57206725975
 research_gate_profile: "Valerio-Rizzi"
 x_username: ValerioRizzi33
-
-
 
 # bluesky_url: "valeriorizzi.bsky.social"
 #inspirehep_id:  # Inspire HEP author ID
