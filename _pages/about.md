@@ -39,13 +39,13 @@ latest_posts:
   }
 </style>
 
-TEST I am a computational scientist and method developer at the University of Geneva, working at the intersection of statistical mechanics, biophysics and computational chemistry. My research focuses on advancing molecular dynamics simulations by developing enhanced sampling methodologies, particularly the OneOPES framework, and data-driven collective variables. Through the integration of statistical theory and efficient software implementation, I seek to overcome the timescale limitations of classical atomistic simulations, enabling the exploration and convergence of complex free energy landscapes.
+I am a computational scientist and method developer at the University of Geneva, working at the intersection of statistical mechanics, biophysics and computational chemistry. My research focuses on advancing molecular dynamics simulations by developing enhanced sampling methodologies, particularly the OneOPES framework, and data-driven collective variables. Through the integration of statistical theory and efficient software implementation, I seek to overcome the timescale limitations of classical atomistic simulations, enabling the exploration and convergence of complex free energy landscapes.
 
 <!-- Side-by-Side: Socials & Scholar Badge via Flexbox -->
-<div style="clear: both; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 24px; margin-top: 2rem; margin-bottom: 2.5rem; padding: 1.25rem 0; border-top: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6;">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 24px; margin-top: 1.5rem; margin-bottom: 2.5rem; padding: 1.25rem 0; border-top: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6;">
   
   <!-- Social List (Left) -->
-  <div style="flex: 1 1 240px; min-width: 220px;">
+  <div style="flex: 1; min-width: 220px;">
     <ul class="list-unstyled mb-0" style="font-size: 0.9rem;">
       <li class="mb-2">
         <a href="#" onclick="window.location.href='mailto:'+'valerio.rizzi'+'@'+'unige.ch'; return false;" class="text-decoration-none">
@@ -95,13 +95,13 @@ TEST I am a computational scientist and method developer at the University of Ge
     </ul>
   </div>
 
-  <!-- Scholar Badge (Centered Right Container) -->
-  <div style="flex: 1 1 280px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-    <small class="text-muted d-block mb-2 font-weight-bold" style="letter-spacing: 0.5px; font-size: 0.72rem;">
+  <!-- Scholar Badge (Right / Centered) -->
+  <div style="flex: 1.3; min-width: 320px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+    <small class="text-muted d-block mb-2 font-weight-bold" style="letter-spacing: 0.5px; text-transform: uppercase; font-size: 0.72rem;">
       Google Scholar Impact & Metrics
     </small>
-    <a href="https://scholar.google.com/citations?user=HUdZjX4AAAAJ" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; max-width: 420px;">
-      <img src="/assets/img/scholar_stats.svg" class="img-fluid rounded mx-auto d-block" alt="Google Scholar Stats" style="width: 100%; height: auto;">
+    <a href="https://scholar.google.com/citations?user=HUdZjX4AAAAJ" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; min-width: 320px; max-width: 480px;">
+      <img src="/assets/img/scholar_stats.svg" class="img-fluid rounded mx-auto d-block" alt="Google Scholar Stats" style="width: 100%; min-width: 320px; max-width: 480px; height: auto;">
     </a>
   </div>
 
