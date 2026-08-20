@@ -45,52 +45,52 @@ I am a computational scientist and method developer at the University of Geneva,
 <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 24px; margin-top: 1.5rem; margin-bottom: 2.5rem; padding: 1.25rem 0; border-top: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6;">
   
   <!-- Social List (Left) -->
-  <div style="flex: 1; min-width: 220px;">
-    <ul class="list-unstyled mb-0" style="font-size: 0.9rem;">
+  <div style="flex: 1; min-width: 240px;">
+    <ul class="list-unstyled mb-0" style="font-size: 0.88rem;">
       <li class="mb-2">
-        <a href="#" onclick="window.location.href='mailto:'+'valerio.rizzi'+'@'+'unige.ch'; return false;" class="text-decoration-none">
-          <i class="fa-solid fa-envelope fa-fw me-3"></i> valerio.rizzi [at] unige.ch
-        </a>
+        <i class="fa-solid fa-envelope fa-fw me-2" style="color: #ea4335;"></i>
+        <strong>email:</strong>
+        <a href="#" onclick="window.location.href='mailto:'+'valerio.rizzi'+'@'+'unige.ch'; return false;" class="text-decoration-none">valerio.rizzi [at] unige.ch</a>
       </li>
       <li class="mb-2">
-        <a href="https://scholar.google.com/citations?user=HUdZjX4AAAAJ" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-          <i class="ai ai-google-scholar fa-fw me-3"></i> Google Scholar
-        </a>
+        <i class="ai ai-google-scholar fa-fw me-2" style="color: #4285F4;"></i>
+        <strong>Google Scholar:</strong>
+        <a href="https://scholar.google.com/citations?user=HUdZjX4AAAAJ" target="_blank" rel="noopener noreferrer" class="text-decoration-none">HUdZjX4AAAAJ</a>
       </li>
       <li class="mb-2">
-        <a href="https://orcid.org/0000-0001-5126-8996" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-          <i class="ai ai-orcid fa-fw me-3"></i> ORCID
-        </a>
+        <i class="ai ai-orcid fa-fw me-2" style="color: #a6ce39;"></i>
+        <strong>ORCID:</strong>
+        <a href="https://orcid.org/0000-0001-5126-8996" target="_blank" rel="noopener noreferrer" class="text-decoration-none">0000-0001-5126-8996</a>
       </li>
       <li class="mb-2">
-        <a href="https://www.webofscience.com/wos/author/rid/GXA-0661-2022" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-          <i class="ai ai-researcherid fa-fw me-3"></i> Web of Science
-        </a>
+        <i class="ai ai-researcherid fa-fw me-2" style="color: #5e33bf;"></i>
+        <strong>WOS:</strong>
+        <a href="https://www.webofscience.com/wos/author/rid/GXA-0661-2022" target="_blank" rel="noopener noreferrer" class="text-decoration-none">GXA-0661-2022</a>
       </li>
       <li class="mb-2">
-        <a href="https://www.scopus.com/authid/detail.uri?authorId=57206725975" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-          <i class="ai ai-scopus fa-fw me-3"></i> Scopus Profile
-        </a>
+        <i class="ai ai-scopus fa-fw me-2" style="color: #ff6c00;"></i>
+        <strong>Scopus:</strong>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=57206725975" target="_blank" rel="noopener noreferrer" class="text-decoration-none">57206725975</a>
       </li>
       <li class="mb-2">
-        <a href="https://www.researchgate.net/profile/Valerio-Rizzi/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-          <i class="ai ai-researchgate fa-fw me-3"></i> ResearchGate
-        </a>
+        <i class="ai ai-researchgate fa-fw me-2" style="color: #00ccbb;"></i>
+        <strong>ResearchGate:</strong>
+        <a href="https://www.researchgate.net/profile/Valerio-Rizzi/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">Valerio-Rizzi</a>
       </li>
       <li class="mb-2">
-        <a href="https://github.com/valeriorizzi" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-          <i class="fa-brands fa-github fa-fw me-3"></i> GitHub
-        </a>
+        <i class="fa-brands fa-github fa-fw me-2" style="color: #24292f;"></i>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/valeriorizzi" target="_blank" rel="noopener noreferrer" class="text-decoration-none">valeriorizzi</a>
       </li>
       <li class="mb-2">
-        <a href="https://www.linkedin.com/in/valerio-rizzi-61b345180" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-          <i class="fa-brands fa-linkedin fa-fw me-3"></i> LinkedIn
-        </a>
+        <i class="fa-brands fa-linkedin fa-fw me-2" style="color: #0a66c2;"></i>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/valerio-rizzi-61b345180" target="_blank" rel="noopener noreferrer" class="text-decoration-none">valerio-rizzi-61b345180</a>
       </li>
       <li class="mb-2">
-        <a href="https://twitter.com/ValerioRizzi33" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-          <i class="fa-brands fa-x-twitter fa-fw me-3"></i> X (Twitter)
-        </a>
+        <i class="fa-brands fa-x-twitter fa-fw me-2" style="color: #000000;"></i>
+        <strong>X (Twitter):</strong>
+        <a href="https://twitter.com/ValerioRizzi33" target="_blank" rel="noopener noreferrer" class="text-decoration-none">ValerioRizzi33</a>
       </li>
     </ul>
   </div>
