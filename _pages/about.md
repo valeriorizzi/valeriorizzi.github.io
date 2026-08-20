@@ -41,11 +41,11 @@ latest_posts:
 
 I am a computational scientist and method developer at the University of Geneva, working at the intersection of statistical mechanics, biophysics and computational chemistry. My research focuses on advancing molecular dynamics simulations by developing enhanced sampling methodologies, particularly the OneOPES framework, and data-driven collective variables. Through the integration of statistical theory and efficient software implementation, I seek to overcome the timescale limitations of classical atomistic simulations, enabling the exploration and convergence of complex free energy landscapes.
 
-<!-- Side-by-Side: Socials & Scholar Badge via Flexbox -->
+<!-- Side-by-Side: Socials Box & Scholar Badge via Flexbox -->
 <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 24px; margin-top: 1.5rem; margin-bottom: 2.5rem; padding: 1.25rem 0; border-top: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6;">
   
-  <!-- Social List (Left) -->
-  <div style="flex: 1; min-width: 240px;">
+  <!-- Social Box (Left) -->
+  <div style="flex: 1; min-width: 260px; border: 1px solid #dee2e6; border-radius: 8px; padding: 1.25rem 1.5rem; background-color: var(--global-card-bg-color, rgba(0, 0, 0, 0.02)); box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);">
     <ul class="list-unstyled mb-0" style="font-size: 0.88rem;">
       <li class="mb-2">
         <i class="fa-solid fa-envelope fa-fw me-2" style="color: #ea4335;"></i>
@@ -64,7 +64,7 @@ I am a computational scientist and method developer at the University of Geneva,
       </li>
       <li class="mb-2">
         <i class="ai ai-researcherid fa-fw me-2" style="color: #5e33bf;"></i>
-        <strong>WOS:</strong>
+        <strong>ResearcherID:</strong>
         <a href="https://www.webofscience.com/wos/author/rid/GXA-0661-2022" target="_blank" rel="noopener noreferrer" class="text-decoration-none">GXA-0661-2022</a>
       </li>
       <li class="mb-2">
