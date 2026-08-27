@@ -998,5 +998,925 @@
     "userRating": "3",
     "dateAdded": "Sat, 07 Jan 2017 05:58:47 -0800",
     "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327316483l/9669123.jpg"
+  },
+  {
+    "title": "Momenti fatali",
+    "link": "https://www.goodreads.com/review/show/1869736301?utm_medium=api&utm_source=rss",
+    "author": "Stefan Zweig",
+    "published": "1927",
+    "avgRating": "4.02",
+    "userRating": "5",
+    "dateAdded": "Sat, 07 Jan 2017 05:55:50 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1622877251l/12759895._SY475_.jpg"
+  },
+  {
+    "title": "Magellano",
+    "link": "https://www.goodreads.com/review/show/1869735851?utm_medium=api&utm_source=rss",
+    "author": "Stefan Zweig",
+    "published": "1938",
+    "avgRating": "4.34",
+    "userRating": "5",
+    "dateAdded": "Sat, 07 Jan 2017 05:55:22 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327792890l/9758571.jpg"
+  },
+  {
+    "title": "Nightfall",
+    "link": "https://www.goodreads.com/review/show/1779877883?utm_medium=api&utm_source=rss",
+    "author": "Isaac Asimov",
+    "published": "1990",
+    "avgRating": "4.06",
+    "userRating": "5",
+    "dateAdded": "Sun, 09 Oct 2016 10:00:25 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1368557860l/99245.jpg"
+  },
+  {
+    "title": "The Naked Sun (Robot, #2)",
+    "link": "https://www.goodreads.com/review/show/1779877834?utm_medium=api&utm_source=rss",
+    "author": "Isaac Asimov",
+    "published": "1958",
+    "avgRating": "4.17",
+    "userRating": "5",
+    "dateAdded": "Sun, 09 Oct 2016 10:00:21 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1655932374l/30016._SY475_.jpg"
+  },
+  {
+    "title": "Prelude to Foundation (Foundation, #6)",
+    "link": "https://www.goodreads.com/review/show/1779877539?utm_medium=api&utm_source=rss",
+    "author": "Isaac Asimov",
+    "published": "1988",
+    "avgRating": "4.16",
+    "userRating": "5",
+    "dateAdded": "Sun, 09 Oct 2016 10:00:03 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1335782474l/30013.jpg"
+  },
+  {
+    "title": "Foundation's Edge (Foundation, #4)",
+    "link": "https://www.goodreads.com/review/show/1779877504?utm_medium=api&utm_source=rss",
+    "author": "Isaac Asimov",
+    "published": "1982",
+    "avgRating": "4.16",
+    "userRating": "4",
+    "dateAdded": "Sun, 09 Oct 2016 09:59:53 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442311409l/76683._SY475_.jpg"
+  },
+  {
+    "title": "Second Foundation (Foundation, #3)",
+    "link": "https://www.goodreads.com/review/show/1779877315?utm_medium=api&utm_source=rss",
+    "author": "Isaac Asimov",
+    "published": "1953",
+    "avgRating": "4.27",
+    "userRating": "5",
+    "dateAdded": "Sun, 09 Oct 2016 09:59:35 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1661015922l/29580._SY475_.jpg"
+  },
+  {
+    "title": "Poems of Nazim Hikmet, Revised and Expanded Edition",
+    "link": "https://www.goodreads.com/review/show/1776170930?utm_medium=api&utm_source=rss",
+    "author": "Nâzım Hikmet",
+    "published": "1973",
+    "avgRating": "4.43",
+    "userRating": "5",
+    "dateAdded": "Tue, 04 Oct 2016 22:46:20 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387747997l/20082290.jpg"
+  },
+  {
+    "title": "Due di due",
+    "link": "https://www.goodreads.com/review/show/1776167497?utm_medium=api&utm_source=rss",
+    "author": "Andrea De Carlo",
+    "published": "1989",
+    "avgRating": "3.71",
+    "userRating": "2",
+    "dateAdded": "Tue, 04 Oct 2016 22:38:50 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1511521493l/209720.jpg"
+  },
+  {
+    "title": "Novecento. Un monologo",
+    "link": "https://www.goodreads.com/review/show/1776167430?utm_medium=api&utm_source=rss",
+    "author": "Alessandro Baricco",
+    "published": "1994",
+    "avgRating": "4.22",
+    "userRating": "3",
+    "dateAdded": "Tue, 04 Oct 2016 22:38:41 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1577055397l/61266._SY475_.jpg"
+  },
+  {
+    "title": "Il candelabro sepolto",
+    "link": "https://www.goodreads.com/review/show/1776167089?utm_medium=api&utm_source=rss",
+    "author": "Stefan Zweig",
+    "published": "1936",
+    "avgRating": "3.76",
+    "userRating": "3",
+    "dateAdded": "Tue, 04 Oct 2016 22:38:05 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1361229529l/17394716.jpg"
+  },
+  {
+    "title": "Il giorno della civetta",
+    "link": "https://www.goodreads.com/review/show/1776166899?utm_medium=api&utm_source=rss",
+    "author": "Leonardo Sciascia",
+    "published": "1961",
+    "avgRating": "3.71",
+    "userRating": "5",
+    "dateAdded": "Tue, 04 Oct 2016 22:37:38 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1701104987l/6057901._SY475_.jpg"
+  },
+  {
+    "title": "Amori ridicoli",
+    "link": "https://www.goodreads.com/review/show/1773919294?utm_medium=api&utm_source=rss",
+    "author": "Milan Kundera",
+    "published": "1979",
+    "avgRating": "3.65",
+    "userRating": "3",
+    "dateAdded": "Sun, 02 Oct 2016 10:28:26 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1763231856l/9694401._SY475_.jpg"
+  },
+  {
+    "title": "Spinoza: A Life",
+    "link": "https://www.goodreads.com/review/show/833861842?utm_medium=api&utm_source=rss",
+    "author": "Steven Nadler",
+    "published": "1999",
+    "avgRating": "4.16",
+    "userRating": "3",
+    "dateAdded": "Sun, 02 Oct 2016 10:27:07 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388746522l/37516.jpg"
+  },
+  {
+    "title": "Double Indemnity (Vintage Crime/Black Lizard)",
+    "link": "https://www.goodreads.com/review/show/1773917431?utm_medium=api&utm_source=rss",
+    "author": "James M. Cain",
+    "published": "1936",
+    "avgRating": "4.06",
+    "userRating": "5",
+    "dateAdded": "Sun, 02 Oct 2016 10:26:03 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1643474470l/56616._SY475_.jpg"
+  },
+  {
+    "title": "La fine dell'eternità",
+    "link": "https://www.goodreads.com/review/show/1773916879?utm_medium=api&utm_source=rss",
+    "author": "Isaac Asimov",
+    "published": "1955",
+    "avgRating": "4.28",
+    "userRating": "5",
+    "dateAdded": "Sun, 02 Oct 2016 10:25:27 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1467544705l/9662206._SY475_.jpg"
+  },
+  {
+    "title": "Il tempo della guerra - Assaggi d'autore gratuiti",
+    "link": "https://www.goodreads.com/review/show/1773916286?utm_medium=api&utm_source=rss",
+    "author": "Andrzej Sapkowski",
+    "published": "",
+    "avgRating": "4.02",
+    "userRating": "5",
+    "dateAdded": "Sun, 02 Oct 2016 10:24:44 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388548426l/20408071.jpg"
+  },
+  {
+    "title": "La Torre della Rondine (La Saga di Geralt di Rivia, #6)",
+    "link": "https://www.goodreads.com/review/show/1773915913?utm_medium=api&utm_source=rss",
+    "author": "Andrzej Sapkowski",
+    "published": "1997",
+    "avgRating": "4.03",
+    "userRating": "5",
+    "dateAdded": "Sun, 02 Oct 2016 10:24:18 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1422745135l/24781409.jpg"
+  },
+  {
+    "title": "Il battesimo del fuoco (La saga di Geralt di Rivia, #5)",
+    "link": "https://www.goodreads.com/review/show/1773915761?utm_medium=api&utm_source=rss",
+    "author": "Andrzej Sapkowski",
+    "published": "1996",
+    "avgRating": "4.04",
+    "userRating": "5",
+    "dateAdded": "Sun, 02 Oct 2016 10:24:04 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1393124344l/20888292.jpg"
+  },
+  {
+    "title": "Blood Meridian, or, the Evening Redness in the West",
+    "link": "https://www.goodreads.com/review/show/833862220?utm_medium=api&utm_source=rss",
+    "author": "Cormac McCarthy",
+    "published": "1985",
+    "avgRating": "4.16",
+    "userRating": "2",
+    "dateAdded": "Sun, 02 Oct 2016 10:21:17 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1701688704l/394535._SY475_.jpg"
+  },
+  {
+    "title": "I Pitard",
+    "link": "https://www.goodreads.com/review/show/1683958857?utm_medium=api&utm_source=rss",
+    "author": "Georges Simenon",
+    "published": "1935",
+    "avgRating": "3.66",
+    "userRating": "4",
+    "dateAdded": "Thu, 30 Jun 2016 10:46:49 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1330158939l/9679066.jpg"
+  },
+  {
+    "title": "Festa mobile",
+    "link": "https://www.goodreads.com/review/show/1683958078?utm_medium=api&utm_source=rss",
+    "author": "Ernest Hemingway",
+    "published": "1964",
+    "avgRating": "3.98",
+    "userRating": "3",
+    "dateAdded": "Thu, 30 Jun 2016 10:46:03 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1331472701l/9661206.jpg"
+  },
+  {
+    "title": "Il mondo di ieri",
+    "link": "https://www.goodreads.com/review/show/1683957935?utm_medium=api&utm_source=rss",
+    "author": "Stefan Zweig",
+    "published": "1942",
+    "avgRating": "4.34",
+    "userRating": "5",
+    "dateAdded": "Thu, 30 Jun 2016 10:45:53 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1393341139l/9700484.jpg"
+  },
+  {
+    "title": "Novella degli scacchi",
+    "link": "https://www.goodreads.com/review/show/1683957467?utm_medium=api&utm_source=rss",
+    "author": "Stefan Zweig",
+    "published": "1942",
+    "avgRating": "4.09",
+    "userRating": "5",
+    "dateAdded": "Thu, 30 Jun 2016 10:45:24 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1302001106l/9711480.jpg"
+  },
+  {
+    "title": "Inshallah",
+    "link": "https://www.goodreads.com/review/show/1683957227?utm_medium=api&utm_source=rss",
+    "author": "Oriana Fallaci",
+    "published": "1990",
+    "avgRating": "4.10",
+    "userRating": "5",
+    "dateAdded": "Thu, 30 Jun 2016 10:45:09 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1234129371l/176009.jpg"
+  },
+  {
+    "title": "Per chi suona la campana",
+    "link": "https://www.goodreads.com/review/show/1683955925?utm_medium=api&utm_source=rss",
+    "author": "Ernest Hemingway",
+    "published": "1940",
+    "avgRating": "4.04",
+    "userRating": "5",
+    "dateAdded": "Thu, 30 Jun 2016 10:43:49 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1216036601l/3750760.jpg"
+  },
+  {
+    "title": "Un uomo",
+    "link": "https://www.goodreads.com/review/show/1683955594?utm_medium=api&utm_source=rss",
+    "author": "Oriana Fallaci",
+    "published": "1979",
+    "avgRating": "4.51",
+    "userRating": "4",
+    "dateAdded": "Thu, 30 Jun 2016 10:43:28 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327868993l/1573886.jpg"
+  },
+  {
+    "title": "L'opera al nero",
+    "link": "https://www.goodreads.com/review/show/1683954960?utm_medium=api&utm_source=rss",
+    "author": "Marguerite Yourcenar",
+    "published": "1968",
+    "avgRating": "3.78",
+    "userRating": "3",
+    "dateAdded": "Thu, 30 Jun 2016 10:42:50 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1346102996l/7852773.jpg"
+  },
+  {
+    "title": "Lo straniero",
+    "link": "https://www.goodreads.com/review/show/1683954613?utm_medium=api&utm_source=rss",
+    "author": "Albert Camus",
+    "published": "1942",
+    "avgRating": "4.05",
+    "userRating": "5",
+    "dateAdded": "Thu, 30 Jun 2016 10:42:27 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1418237841l/3940524.jpg"
+  },
+  {
+    "title": "Lo scherzo",
+    "link": "https://www.goodreads.com/review/show/1683954215?utm_medium=api&utm_source=rss",
+    "author": "Milan Kundera",
+    "published": "1967",
+    "avgRating": "3.92",
+    "userRating": "5",
+    "dateAdded": "Thu, 30 Jun 2016 10:42:02 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1299765501l/9710963.jpg"
+  },
+  {
+    "title": "Saigon e così sia",
+    "link": "https://www.goodreads.com/review/show/1683954007?utm_medium=api&utm_source=rss",
+    "author": "Oriana Fallaci",
+    "published": "2010",
+    "avgRating": "4.13",
+    "userRating": "3",
+    "dateAdded": "Thu, 30 Jun 2016 10:41:47 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1342968420l/11104813.jpg"
+  },
+  {
+    "title": "L'identità",
+    "link": "https://www.goodreads.com/review/show/1683953624?utm_medium=api&utm_source=rss",
+    "author": "Milan Kundera",
+    "published": "1997",
+    "avgRating": "3.69",
+    "userRating": "4",
+    "dateAdded": "Thu, 30 Jun 2016 10:41:22 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336143397l/9706792.jpg"
+  },
+  {
+    "title": "Noi",
+    "link": "https://www.goodreads.com/review/show/1683952941?utm_medium=api&utm_source=rss",
+    "author": "Yevgeny Zamyatin",
+    "published": "1924",
+    "avgRating": "3.82",
+    "userRating": "3",
+    "dateAdded": "Thu, 30 Jun 2016 10:40:36 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1463234477l/30186408._SX318_.jpg"
+  },
+  {
+    "title": "La fine è nota",
+    "link": "https://www.goodreads.com/review/show/1683952641?utm_medium=api&utm_source=rss",
+    "author": "Geoffrey Holiday Hall",
+    "published": "1949",
+    "avgRating": "3.98",
+    "userRating": "5",
+    "dateAdded": "Thu, 30 Jun 2016 10:40:15 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1250730237l/6725978.jpg"
+  },
+  {
+    "title": "Il guardiano degli innocenti (La saga di Geralt di Rivia, #1)",
+    "link": "https://www.goodreads.com/review/show/1683952150?utm_medium=api&utm_source=rss",
+    "author": "Andrzej Sapkowski",
+    "published": "1993",
+    "avgRating": "3.91",
+    "userRating": "4",
+    "dateAdded": "Thu, 30 Jun 2016 10:39:38 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1544309381l/9694481.jpg"
+  },
+  {
+    "title": "La spada del destino (La saga di Geralt di Rivia, #2)",
+    "link": "https://www.goodreads.com/review/show/1683951889?utm_medium=api&utm_source=rss",
+    "author": "Andrzej Sapkowski",
+    "published": "1992",
+    "avgRating": "4.07",
+    "userRating": "5",
+    "dateAdded": "Thu, 30 Jun 2016 10:39:21 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1578159980l/10782161._SX318_.jpg"
+  },
+  {
+    "title": "Qualcuno alla porta",
+    "link": "https://www.goodreads.com/review/show/1683951568?utm_medium=api&utm_source=rss",
+    "author": "Geoffrey Holiday Hall",
+    "published": "1954",
+    "avgRating": "3.48",
+    "userRating": "4",
+    "dateAdded": "Thu, 30 Jun 2016 10:38:58 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1265632013l/7709122.jpg"
+  },
+  {
+    "title": "Una storia semplice",
+    "link": "https://www.goodreads.com/review/show/1683951333?utm_medium=api&utm_source=rss",
+    "author": "Leonardo Sciascia",
+    "published": "1989",
+    "avgRating": "3.83",
+    "userRating": "4",
+    "dateAdded": "Thu, 30 Jun 2016 10:38:41 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1616845647l/294485._SY475_.jpg"
+  },
+  {
+    "title": "Romanzo criminale",
+    "link": "https://www.goodreads.com/review/show/1683951122?utm_medium=api&utm_source=rss",
+    "author": "Giancarlo De Cataldo",
+    "published": "2002",
+    "avgRating": "4.06",
+    "userRating": "3",
+    "dateAdded": "Thu, 30 Jun 2016 10:38:24 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1290781992l/9553334.jpg"
+  },
+  {
+    "title": "La lentezza",
+    "link": "https://www.goodreads.com/review/show/1683950691?utm_medium=api&utm_source=rss",
+    "author": "Milan Kundera",
+    "published": "1995",
+    "avgRating": "3.38",
+    "userRating": "4",
+    "dateAdded": "Thu, 30 Jun 2016 10:37:53 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1352057183l/6270242.jpg"
+  },
+  {
+    "title": "Il sesso inutile",
+    "link": "https://www.goodreads.com/review/show/1683950457?utm_medium=api&utm_source=rss",
+    "author": "Oriana Fallaci",
+    "published": "1961",
+    "avgRating": "3.98",
+    "userRating": "4",
+    "dateAdded": "Thu, 30 Jun 2016 10:37:36 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1391051564l/20654466.jpg"
+  },
+  {
+    "title": "The Late Mattia Pascal",
+    "link": "https://www.goodreads.com/review/show/833863851?utm_medium=api&utm_source=rss",
+    "author": "Luigi Pirandello",
+    "published": "1904",
+    "avgRating": "4.07",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:56:06 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1657551524l/12116._SY475_.jpg"
+  },
+  {
+    "title": "The Return of the King (The Lord of the Rings, #3)",
+    "link": "https://www.goodreads.com/review/show/833863638?utm_medium=api&utm_source=rss",
+    "author": "J.R.R. Tolkien",
+    "published": "1955",
+    "avgRating": "4.54",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:55:29 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1520258755l/18512._SY475_.jpg"
+  },
+  {
+    "title": "The Two Towers (The Lord of the Rings, #2)",
+    "link": "https://www.goodreads.com/review/show/833863611?utm_medium=api&utm_source=rss",
+    "author": "J.R.R. Tolkien",
+    "published": "1954",
+    "avgRating": "4.45",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:55:25 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1661031399l/15241._SX318_.jpg"
+  },
+  {
+    "title": "Beware of Pity",
+    "link": "https://www.goodreads.com/review/show/833863306?utm_medium=api&utm_source=rss",
+    "author": "Stefan Zweig",
+    "published": "1939",
+    "avgRating": "4.29",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:54:25 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1657549159l/59149._SY475_.jpg"
+  },
+  {
+    "title": "A Dance with Dragons (A Song of Ice and Fire, #5)",
+    "link": "https://www.goodreads.com/review/show/833862670?utm_medium=api&utm_source=rss",
+    "author": "George R.R. Martin",
+    "published": "2011",
+    "avgRating": "4.34",
+    "userRating": "3",
+    "dateAdded": "Sat, 25 Jan 2014 01:52:36 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753059444l/10664113._SY475_.jpg"
+  },
+  {
+    "title": "A Feast for Crows (A Song of Ice and Fire, #4)",
+    "link": "https://www.goodreads.com/review/show/833862642?utm_medium=api&utm_source=rss",
+    "author": "George R.R. Martin",
+    "published": "2005",
+    "avgRating": "4.17",
+    "userRating": "3",
+    "dateAdded": "Sat, 25 Jan 2014 01:52:32 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1661026821l/13497._SY475_.jpg"
+  },
+  {
+    "title": "A Storm of Swords (A Song of Ice and Fire, #3)",
+    "link": "https://www.goodreads.com/review/show/833862613?utm_medium=api&utm_source=rss",
+    "author": "George R.R. Martin",
+    "published": "2000",
+    "avgRating": "4.55",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:52:28 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1571318786l/62291.jpg"
+  },
+  {
+    "title": "A Clash of Kings  (A Song of Ice and Fire, #2)",
+    "link": "https://www.goodreads.com/review/show/833862580?utm_medium=api&utm_source=rss",
+    "author": "George R.R. Martin",
+    "published": "1998",
+    "avgRating": "4.42",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:52:24 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1567840212l/10572.jpg"
+  },
+  {
+    "title": "Cloud Atlas",
+    "link": "https://www.goodreads.com/review/show/833862344?utm_medium=api&utm_source=rss",
+    "author": "David  Mitchell",
+    "published": "2004",
+    "avgRating": "4.02",
+    "userRating": "3",
+    "dateAdded": "Sat, 25 Jan 2014 01:51:45 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1563042852l/49628._SX318_.jpg"
+  },
+  {
+    "title": "The Year of the Death of Ricardo Reis",
+    "link": "https://www.goodreads.com/review/show/833861595?utm_medium=api&utm_source=rss",
+    "author": "José Saramago",
+    "published": "1984",
+    "avgRating": "4.04",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:49:40 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348284177l/2536.jpg"
+  },
+  {
+    "title": "White Nights",
+    "link": "https://www.goodreads.com/review/show/833861166?utm_medium=api&utm_source=rss",
+    "author": "Fyodor Dostoevsky",
+    "published": "1848",
+    "avgRating": "4.11",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:48:36 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1450699039l/1772910.jpg"
+  },
+  {
+    "title": "Twisted: The Collected Short Stories",
+    "link": "https://www.goodreads.com/review/show/833860906?utm_medium=api&utm_source=rss",
+    "author": "Jeffery Deaver",
+    "published": "2003",
+    "avgRating": "3.92",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:47:53 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388375399l/28567.jpg"
+  },
+  {
+    "title": "Garden of Beasts",
+    "link": "https://www.goodreads.com/review/show/833860858?utm_medium=api&utm_source=rss",
+    "author": "Jeffery Deaver",
+    "published": "2004",
+    "avgRating": "3.86",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:47:45 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348212232l/310745.jpg"
+  },
+  {
+    "title": "The Blue Nowhere",
+    "link": "https://www.goodreads.com/review/show/833860637?utm_medium=api&utm_source=rss",
+    "author": "Jeffery Deaver",
+    "published": "2001",
+    "avgRating": "3.98",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:47:13 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1358384680l/343995.jpg"
+  },
+  {
+    "title": "The Twelfth Card (Lincoln Rhyme, #6)",
+    "link": "https://www.goodreads.com/review/show/833860605?utm_medium=api&utm_source=rss",
+    "author": "Jeffery Deaver",
+    "published": "2005",
+    "avgRating": "3.98",
+    "userRating": "3",
+    "dateAdded": "Sat, 25 Jan 2014 01:47:08 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328407138l/106312.jpg"
+  },
+  {
+    "title": "The Cold Moon (Lincoln Rhyme, #7)",
+    "link": "https://www.goodreads.com/review/show/833860587?utm_medium=api&utm_source=rss",
+    "author": "Jeffery Deaver",
+    "published": "2006",
+    "avgRating": "4.06",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:47:05 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1437226585l/93808._SY475_.jpg"
+  },
+  {
+    "title": "The Stone Monkey (Lincoln Rhyme, #4)",
+    "link": "https://www.goodreads.com/review/show/833860516?utm_medium=api&utm_source=rss",
+    "author": "Jeffery Deaver",
+    "published": "2002",
+    "avgRating": "3.96",
+    "userRating": "3",
+    "dateAdded": "Sat, 25 Jan 2014 01:46:54 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336331827l/142545.jpg"
+  },
+  {
+    "title": "The Empty Chair (Lincoln Rhyme, #3)",
+    "link": "https://www.goodreads.com/review/show/833860476?utm_medium=api&utm_source=rss",
+    "author": "Jeffery Deaver",
+    "published": "2000",
+    "avgRating": "4.06",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:46:50 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1336331745l/142540.jpg"
+  },
+  {
+    "title": "The Vanished Man (Lincoln Rhyme, #5)",
+    "link": "https://www.goodreads.com/review/show/833860417?utm_medium=api&utm_source=rss",
+    "author": "Jeffery Deaver",
+    "published": "2003",
+    "avgRating": "4.08",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:46:38 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1257881028l/28568.jpg"
+  },
+  {
+    "title": "The Coffin Dancer (Lincoln Rhyme, #2)",
+    "link": "https://www.goodreads.com/review/show/833860385?utm_medium=api&utm_source=rss",
+    "author": "Jeffery Deaver",
+    "published": "1998",
+    "avgRating": "4.15",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:46:31 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1440619491l/227729._SY475_.jpg"
+  },
+  {
+    "title": "The Master and Margarita",
+    "link": "https://www.goodreads.com/review/show/833859748?utm_medium=api&utm_source=rss",
+    "author": "Mikhail Bulgakov",
+    "published": "1925",
+    "avgRating": "4.30",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:44:40 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327867963l/117833.jpg"
+  },
+  {
+    "title": "I, Robot (Robot, #0.1)",
+    "link": "https://www.goodreads.com/review/show/833858314?utm_medium=api&utm_source=rss",
+    "author": "Isaac Asimov",
+    "published": "1950",
+    "avgRating": "4.22",
+    "userRating": "3",
+    "dateAdded": "Sat, 25 Jan 2014 01:40:40 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1609035271l/41804.jpg"
+  },
+  {
+    "title": "The Gods Themselves",
+    "link": "https://www.goodreads.com/review/show/833858187?utm_medium=api&utm_source=rss",
+    "author": "Isaac Asimov",
+    "published": "1972",
+    "avgRating": "4.10",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:40:18 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1351076141l/41821.jpg"
+  },
+  {
+    "title": "Rendezvous with Rama (Rama, #1)",
+    "link": "https://www.goodreads.com/review/show/833858127?utm_medium=api&utm_source=rss",
+    "author": "Arthur C. Clarke",
+    "published": "1973",
+    "avgRating": "4.12",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:40:07 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1405456427l/112537.jpg"
+  },
+  {
+    "title": "The Foundation Trilogy (Foundation, #1-3)",
+    "link": "https://www.goodreads.com/review/show/833857951?utm_medium=api&utm_source=rss",
+    "author": "Isaac Asimov",
+    "published": "1953",
+    "avgRating": "4.42",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:39:35 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1316412178l/46654.jpg"
+  },
+  {
+    "title": "The Great Dune Trilogy",
+    "link": "https://www.goodreads.com/review/show/833857911?utm_medium=api&utm_source=rss",
+    "author": "Frank Herbert",
+    "published": "1965",
+    "avgRating": "4.36",
+    "userRating": "3",
+    "dateAdded": "Sat, 25 Jan 2014 01:39:28 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1419962914l/53764.jpg"
+  },
+  {
+    "title": "Ringworld (Ringworld #1)",
+    "link": "https://www.goodreads.com/review/show/833857847?utm_medium=api&utm_source=rss",
+    "author": "Larry Niven",
+    "published": "1970",
+    "avgRating": "3.95",
+    "userRating": "3",
+    "dateAdded": "Sat, 25 Jan 2014 01:39:17 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1408793358l/61179.jpg"
+  },
+  {
+    "title": "Foundation (Foundation, #1)",
+    "link": "https://www.goodreads.com/review/show/833857753?utm_medium=api&utm_source=rss",
+    "author": "Isaac Asimov",
+    "published": "1951",
+    "avgRating": "4.18",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:39:05 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579.jpg"
+  },
+  {
+    "title": "The Shadow of the Wind (The Cemetery of Forgotten Books, #1)",
+    "link": "https://www.goodreads.com/review/show/833857005?utm_medium=api&utm_source=rss",
+    "author": "Carlos Ruiz Zafón",
+    "published": "2001",
+    "avgRating": "4.26",
+    "userRating": "3",
+    "dateAdded": "Sat, 25 Jan 2014 01:37:15 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1628791882l/1232._SY475_.jpg"
+  },
+  {
+    "title": "The Name of the Rose",
+    "link": "https://www.goodreads.com/review/show/833856809?utm_medium=api&utm_source=rss",
+    "author": "Umberto Eco",
+    "published": "1980",
+    "avgRating": "4.14",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:36:50 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1415375471l/119073.jpg"
+  },
+  {
+    "title": "The Picture of Dorian Gray",
+    "link": "https://www.goodreads.com/review/show/833856223?utm_medium=api&utm_source=rss",
+    "author": "Oscar Wilde",
+    "published": "1890",
+    "avgRating": "4.13",
+    "userRating": "2",
+    "dateAdded": "Sat, 25 Jan 2014 01:35:30 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546103428l/5297.jpg"
+  },
+  {
+    "title": "A Game of Thrones (A Song of Ice and Fire, #1)",
+    "link": "https://www.goodreads.com/review/show/833855473?utm_medium=api&utm_source=rss",
+    "author": "George R.R. Martin",
+    "published": "1996",
+    "avgRating": "4.45",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:33:45 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562726234l/13496.jpg"
+  },
+  {
+    "title": "The Bone Collector (Lincoln Rhyme, #1)",
+    "link": "https://www.goodreads.com/review/show/833855353?utm_medium=api&utm_source=rss",
+    "author": "Jeffery Deaver",
+    "published": "1997",
+    "avgRating": "4.20",
+    "userRating": "3",
+    "dateAdded": "Sat, 25 Jan 2014 01:33:28 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1437538512l/2373._SY475_.jpg"
+  },
+  {
+    "title": "The Girl With the Dragon Tattoo (Millennium, #1)",
+    "link": "https://www.goodreads.com/review/show/833855200?utm_medium=api&utm_source=rss",
+    "author": "Stieg Larsson",
+    "published": "2005",
+    "avgRating": "4.17",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:33:04 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1684638853l/2429135.jpg"
+  },
+  {
+    "title": "V for Vendetta",
+    "link": "https://www.goodreads.com/review/show/833855005?utm_medium=api&utm_source=rss",
+    "author": "Alan Moore",
+    "published": "1990",
+    "avgRating": "4.26",
+    "userRating": "3",
+    "dateAdded": "Sat, 25 Jan 2014 01:32:37 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1343668985l/5805.jpg"
+  },
+  {
+    "title": "Watchmen",
+    "link": "https://www.goodreads.com/review/show/833854935?utm_medium=api&utm_source=rss",
+    "author": "Alan Moore",
+    "published": "1987",
+    "avgRating": "4.39",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:32:28 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442239711l/472331.jpg"
+  },
+  {
+    "title": "The Idiot",
+    "link": "https://www.goodreads.com/review/show/833854625?utm_medium=api&utm_source=rss",
+    "author": "Fyodor Dostoevsky",
+    "published": "1869",
+    "avgRating": "4.22",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:31:40 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1657539107l/12505._SY475_.jpg"
+  },
+  {
+    "title": "The Fellowship of the Ring (The Lord of the Rings, #1)",
+    "link": "https://www.goodreads.com/review/show/833854444?utm_medium=api&utm_source=rss",
+    "author": "J.R.R. Tolkien",
+    "published": "1954",
+    "avgRating": "4.37",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:31:10 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1298411339l/34.jpg"
+  },
+  {
+    "title": "The Brothers Karamazov",
+    "link": "https://www.goodreads.com/review/show/833854342?utm_medium=api&utm_source=rss",
+    "author": "Fyodor Dostoevsky",
+    "published": "1879",
+    "avgRating": "4.38",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:30:52 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1427728126l/4934.jpg"
+  },
+  {
+    "title": "War and Peace",
+    "link": "https://www.goodreads.com/review/show/833854036?utm_medium=api&utm_source=rss",
+    "author": "Leo Tolstoy",
+    "published": "1868",
+    "avgRating": "4.14",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:30:03 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1413215930l/656.jpg"
+  },
+  {
+    "title": "Demons",
+    "link": "https://www.goodreads.com/review/show/833853809?utm_medium=api&utm_source=rss",
+    "author": "Fyodor Dostoevsky",
+    "published": "1871",
+    "avgRating": "4.32",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:29:27 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1524586008l/5695.jpg"
+  },
+  {
+    "title": "Doctor Zhivago",
+    "link": "https://www.goodreads.com/review/show/833853726?utm_medium=api&utm_source=rss",
+    "author": "Boris Pasternak",
+    "published": "1957",
+    "avgRating": "4.03",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:29:15 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1385508725l/130440.jpg"
+  },
+  {
+    "title": "Crime and Punishment",
+    "link": "https://www.goodreads.com/review/show/833853221?utm_medium=api&utm_source=rss",
+    "author": "Fyodor Dostoevsky",
+    "published": "1866",
+    "avgRating": "4.27",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:28:43 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1382846449l/7144.jpg"
+  },
+  {
+    "title": "Anna Karenina",
+    "link": "https://www.goodreads.com/review/show/833853137?utm_medium=api&utm_source=rss",
+    "author": "Leo Tolstoy",
+    "published": "1878",
+    "avgRating": "4.12",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:28:31 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546091617l/15823480._SY475_.jpg"
+  },
+  {
+    "title": "Dracula",
+    "link": "https://www.goodreads.com/review/show/833853025?utm_medium=api&utm_source=rss",
+    "author": "Bram Stoker",
+    "published": "1897",
+    "avgRating": "4.03",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:28:14 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387151694l/17245.jpg"
+  },
+  {
+    "title": "Of Mice and Men",
+    "link": "https://www.goodreads.com/review/show/833852899?utm_medium=api&utm_source=rss",
+    "author": "John Steinbeck",
+    "published": "1937",
+    "avgRating": "3.89",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:27:54 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1511302904l/890._SX318_.jpg"
+  },
+  {
+    "title": "Brave New World",
+    "link": "https://www.goodreads.com/review/show/833852807?utm_medium=api&utm_source=rss",
+    "author": "Aldous Huxley",
+    "published": "1932",
+    "avgRating": "3.99",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:27:40 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1575509280l/5129._SY475_.jpg"
+  },
+  {
+    "title": "The Caves of Steel (Robot, #1)",
+    "link": "https://www.goodreads.com/review/show/833852684?utm_medium=api&utm_source=rss",
+    "author": "Isaac Asimov",
+    "published": "1953",
+    "avgRating": "4.19",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:27:24 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1335782224l/41811.jpg"
+  },
+  {
+    "title": "Do Androids Dream of Electric Sheep?",
+    "link": "https://www.goodreads.com/review/show/833852556?utm_medium=api&utm_source=rss",
+    "author": "Philip K. Dick",
+    "published": "1968",
+    "avgRating": "4.08",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:27:07 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519481930l/7082.jpg"
+  },
+  {
+    "title": "1984",
+    "link": "https://www.goodreads.com/review/show/833852505?utm_medium=api&utm_source=rss",
+    "author": "George Orwell",
+    "published": "1949",
+    "avgRating": "4.15",
+    "userRating": "5",
+    "dateAdded": "Sat, 25 Jan 2014 01:26:58 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348990566l/5470.jpg"
+  },
+  {
+    "title": "Animal Farm",
+    "link": "https://www.goodreads.com/review/show/833852482?utm_medium=api&utm_source=rss",
+    "author": "George Orwell",
+    "published": "1945",
+    "avgRating": "3.90",
+    "userRating": "4",
+    "dateAdded": "Sat, 25 Jan 2014 01:26:53 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1424037542l/7613.jpg"
   }
 ]
