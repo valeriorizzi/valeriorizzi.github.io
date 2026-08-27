@@ -1,0 +1,28 @@
+name: Test Goodreads Fetch
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test-fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run test script
+        run: python scripts/fetch_goodreads.py
+
+      - name: Commit test output
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "test: verify goodreads fetch"
+          file_pattern: "_data/books.json"
