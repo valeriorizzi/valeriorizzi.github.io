@@ -1,0 +1,702 @@
+[
+  {
+    "title": "Les gens d'en face",
+    "author": "Georges Simenon",
+    "rating": "4",
+    "dateAdded": "Wed, 19 Aug 2026 02:30:38 -0700",
+    "coverUrl": "https://s.gr-assets.com/assets/nophoto/book/111x148-675b3b2743c83e96e2540d2929d5f4d2.png"
+  },
+  {
+    "title": "Pastorale americana",
+    "author": "Philip Roth",
+    "rating": "2",
+    "dateAdded": "Tue, 18 Aug 2026 13:42:22 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1609795537l/3750853._SY475_.jpg"
+  },
+  {
+    "title": "Il divano di Istanbul",
+    "author": "Alessandro Barbero",
+    "rating": "4",
+    "dateAdded": "Tue, 18 Aug 2026 12:45:36 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1341169584l/11349838.jpg"
+  },
+  {
+    "title": "Il libro del riso e dell'oblio",
+    "author": "Milan Kundera",
+    "rating": "4",
+    "dateAdded": "Tue, 18 Aug 2026 12:45:16 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1381263871l/9679065.jpg"
+  },
+  {
+    "title": "The Strangest Man: The Hidden Life of Paul Dirac, Mystic of the Atom",
+    "author": "Graham Farmelo",
+    "rating": "4",
+    "dateAdded": "Tue, 18 Aug 2026 12:44:12 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442970409l/6629359._SY475_.jpg"
+  },
+  {
+    "title": "Midnight at the Pera Palace: The Birth of Modern Istanbul",
+    "author": "Charles  King",
+    "rating": "3",
+    "dateAdded": "Tue, 18 Aug 2026 12:43:53 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1440536307l/25527262.jpg"
+  },
+  {
+    "title": "Open",
+    "author": "Andre Agassi",
+    "rating": "4",
+    "dateAdded": "Tue, 18 Aug 2026 12:43:29 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320520930l/6480781.jpg"
+  },
+  {
+    "title": "Circe",
+    "author": "Madeline Miller",
+    "rating": "5",
+    "dateAdded": "Tue, 18 Aug 2026 12:43:08 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1565909496l/35959740._SY475_.jpg"
+  },
+  {
+    "title": "The Song of Achilles",
+    "author": "Madeline Miller",
+    "rating": "5",
+    "dateAdded": "Tue, 18 Aug 2026 12:42:57 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1357177533l/13623848._SY475_.jpg"
+  },
+  {
+    "title": "Il re, il cuoco e il buffone",
+    "author": "Daniel Kehlmann",
+    "rating": "4",
+    "dateAdded": "Tue, 18 Aug 2026 12:42:42 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554361330l/44781981._SY475_.jpg"
+  },
+  {
+    "title": "The Silk Roads: A New History of the World",
+    "author": "Peter Frankopan",
+    "rating": "4",
+    "dateAdded": "Tue, 18 Aug 2026 12:41:53 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1472636067l/25812847._SY475_.jpg"
+  },
+  {
+    "title": "Dante",
+    "author": "Alessandro Barbero",
+    "rating": "4",
+    "dateAdded": "Tue, 18 Aug 2026 12:41:30 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602074247l/55589099._SX318_.jpg"
+  },
+  {
+    "title": "Le Dernier Jour d'un condamné",
+    "author": "Victor Hugo",
+    "rating": "4",
+    "dateAdded": "Tue, 18 Aug 2026 12:40:11 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1355050851l/1638232.jpg"
+  },
+  {
+    "title": "Les Caves du Majestic",
+    "author": "Georges Simenon",
+    "rating": "4",
+    "dateAdded": "Tue, 18 Aug 2026 12:39:14 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356150188l/9167496.jpg"
+  },
+  {
+    "title": "Maigret En Auvergne - L'Affaire Saint Fiacre / Maigret à Vichy",
+    "author": "Georges Simenon",
+    "rating": "4",
+    "dateAdded": "Tue, 18 Aug 2026 12:38:21 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1677829423l/33084135._SY475_.jpg"
+  },
+  {
+    "title": "Maigret tend un piège",
+    "author": "Georges Simenon",
+    "rating": "5",
+    "dateAdded": "Tue, 18 Aug 2026 12:38:00 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1488233330l/2936991._SY475_.jpg"
+  },
+  {
+    "title": "Maigret voyage",
+    "author": "Georges Simenon",
+    "rating": "4",
+    "dateAdded": "Tue, 18 Aug 2026 12:37:39 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356495862l/2295802.jpg"
+  },
+  {
+    "title": "1177 B.C.: The Year Civilization Collapsed",
+    "author": "Eric H. Cline",
+    "rating": "4",
+    "dateAdded": "Tue, 18 Aug 2026 12:37:17 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1397424814l/18730589.jpg"
+  },
+  {
+    "title": "Maigret et le Fantôme",
+    "author": "Georges Simenon",
+    "rating": "5",
+    "dateAdded": "Tue, 18 Aug 2026 12:36:38 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356082807l/8120169.jpg"
+  },
+  {
+    "title": "Vingt mille lieues sous les mers",
+    "author": "Jules Verne",
+    "rating": "4",
+    "dateAdded": "Tue, 18 Aug 2026 12:34:36 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1454514587l/355944.jpg"
+  },
+  {
+    "title": "Le locataire",
+    "author": "Georges Simenon",
+    "rating": "4",
+    "dateAdded": "Tue, 18 Aug 2026 12:34:10 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360565716l/140858.jpg"
+  },
+  {
+    "title": "C'era due volte il barone Lamberto",
+    "author": "Gianni Rodari",
+    "rating": "5",
+    "dateAdded": "Tue, 18 Aug 2026 12:33:31 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1300987608l/1959216.jpg"
+  },
+  {
+    "title": "The Complete Aubrey/Maturin Novels (5 Volumes)",
+    "author": "Patrick O'Brian",
+    "rating": "5",
+    "dateAdded": "Wed, 12 Aug 2026 12:35:27 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388325762l/24520.jpg"
+  },
+  {
+    "title": "Master and Commander (Aubrey & Maturin, #1)",
+    "author": "Patrick O'Brian",
+    "rating": "5",
+    "dateAdded": "Wed, 12 Aug 2026 12:34:37 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1615001689l/53597791.jpg"
+  },
+  {
+    "title": "Dune (Dune, #1)",
+    "author": "Frank Herbert",
+    "rating": "5",
+    "dateAdded": "Wed, 12 Aug 2026 12:30:44 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1555447414l/44767458.jpg"
+  },
+  {
+    "title": "Odissea",
+    "author": "Homer",
+    "rating": "5",
+    "dateAdded": "Wed, 12 Aug 2026 12:25:44 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1390571675l/10446139.jpg"
+  },
+  {
+    "title": "L Aiguille creuse (French Edition)",
+    "author": "Maurice Leblanc",
+    "rating": "3",
+    "dateAdded": "Wed, 12 Aug 2026 12:25:05 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1677828324l/32040093._SY475_.jpg"
+  },
+  {
+    "title": "Les Fiançailles de monsieur Hire",
+    "author": "Georges Simenon",
+    "rating": "5",
+    "dateAdded": "Wed, 12 Aug 2026 12:24:38 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1525342848l/2351734.jpg"
+  },
+  {
+    "title": "Guerra infinita",
+    "author": "Lorenzo Cremonesi",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 12:24:04 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1653122044l/61138809._SY475_.jpg"
+  },
+  {
+    "title": "Mare selvaggio: Storie di vita e di vela (Italian Edition)",
+    "author": "Matteo Caccia",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 12:23:46 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1761735347l/243325055._SX318_.jpg"
+  },
+  {
+    "title": "Maigret Et L'Affaire Nahour",
+    "author": "Georges Simenon",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 12:23:28 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1520019773l/2295797._SY475_.jpg"
+  },
+  {
+    "title": "Mr Palomar",
+    "author": "Italo Calvino",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 12:22:22 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1639229917l/60106._SY475_.jpg"
+  },
+  {
+    "title": "Maigret et le Clochard (French Edition)",
+    "author": "Georges Simenon",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 12:22:06 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356498580l/140782.jpg"
+  },
+  {
+    "title": "Suite 200: L'ultima notte di Ayrton Senna",
+    "author": "Giorgio Terruzzi",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 12:21:49 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1398021133l/21954476.jpg"
+  },
+  {
+    "title": "Fondocorsa - Mille miglia 1954. L’oro nero di Alberto Ascari",
+    "author": "Giorgio Terruzzi",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 12:21:40 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1655711811l/61326739._SY475_.jpg"
+  },
+  {
+    "title": "Cadere sette volte, rialzarsi otto: Il Giappone e il giapponese per autodidatti",
+    "author": "Flavio Parisi",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 12:20:55 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1726794642l/219368784._SY475_.jpg"
+  },
+  {
+    "title": "Caravaggio: A Life Sacred and Profane",
+    "author": "Andrew Graham-Dixon",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 12:20:44 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1277754873l/7558367.jpg"
+  },
+  {
+    "title": "La Vérité sur l'Affaire Harry Quebert (Marcus Goldman, #1)",
+    "author": "Joël Dicker",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 12:20:25 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347987605l/16033842.jpg"
+  },
+  {
+    "title": "La neige était sale",
+    "author": "Georges Simenon",
+    "rating": "3",
+    "dateAdded": "Wed, 12 Aug 2026 12:20:03 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753847498l/3600548._SY475_.jpg"
+  },
+  {
+    "title": "To The City: Life and Death Along the Ancient Walls of Istanbul",
+    "author": "Alexander Christie-Miller",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 12:19:37 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1699746049l/175357370._SY475_.jpg"
+  },
+  {
+    "title": "Children of Achilles: The Greeks in Asia Minor since the Days of Troy",
+    "author": "John Freely",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 12:19:03 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1312073084l/8345817.jpg"
+  },
+  {
+    "title": "Mare aperto: Storia umana del Mediterraneo centrale",
+    "author": "Luca Misculin",
+    "rating": "5",
+    "dateAdded": "Wed, 12 Aug 2026 12:18:29 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1741873670l/229097452._SY475_.jpg"
+  },
+  {
+    "title": "Le Grand Bob",
+    "author": "Georges Simenon",
+    "rating": "5",
+    "dateAdded": "Wed, 12 Aug 2026 12:18:03 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347798325l/2800652.jpg"
+  },
+  {
+    "title": "Le monde est fatigué",
+    "author": "Joseph Incardona",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 10:04:04 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1748776496l/230912500._SY475_.jpg"
+  },
+  {
+    "title": "Maigret et les petits cochons sans queue",
+    "author": "Georges Simenon",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 10:03:45 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356498827l/2260536.jpg"
+  },
+  {
+    "title": "Les fantômes du chapelier",
+    "author": "Georges Simenon",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 10:03:30 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1341472606l/2751108.jpg"
+  },
+  {
+    "title": "Feux rouges",
+    "author": "Georges Simenon",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 10:03:04 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1340270397l/3600562.jpg"
+  },
+  {
+    "title": "Metro 2033 (Metro, #1)",
+    "author": "Dmitry Glukhovsky",
+    "rating": "3",
+    "dateAdded": "Wed, 12 Aug 2026 10:02:31 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1379621430l/17274667.jpg"
+  },
+  {
+    "title": "Children of Time (Children of Time, #1)",
+    "author": "Adrian Tchaikovsky",
+    "rating": "5",
+    "dateAdded": "Wed, 12 Aug 2026 10:02:20 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1431014197l/25499718.jpg"
+  },
+  {
+    "title": "Le Soleil des Scorta",
+    "author": "Laurent Gaudé",
+    "rating": "2",
+    "dateAdded": "Wed, 12 Aug 2026 10:01:59 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734794287l/132109._SY475_.jpg"
+  },
+  {
+    "title": "Whirlwind (Asian Saga, #6)",
+    "author": "James Clavell",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 10:01:37 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388588052l/42932.jpg"
+  },
+  {
+    "title": "Gai-Jin (Asian Saga, #3)",
+    "author": "James Clavell",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 10:01:30 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1713024003l/42929.jpg"
+  },
+  {
+    "title": "Maigret a peur",
+    "author": "Georges Simenon",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 10:00:59 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1699357309l/6615126._SY475_.jpg"
+  },
+  {
+    "title": "Noble House (Asian Saga, #5)",
+    "author": "James Clavell",
+    "rating": "5",
+    "dateAdded": "Wed, 12 Aug 2026 10:00:35 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1365185986l/390711.jpg"
+  },
+  {
+    "title": "King Rat (Asian Saga, #4)",
+    "author": "James Clavell",
+    "rating": "5",
+    "dateAdded": "Wed, 12 Aug 2026 10:00:17 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388889819l/9827.jpg"
+  },
+  {
+    "title": "Tai-Pan (Asian Saga, #2)",
+    "author": "James Clavell",
+    "rating": "5",
+    "dateAdded": "Wed, 12 Aug 2026 09:59:47 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1577989362l/42933._SY475_.jpg"
+  },
+  {
+    "title": "Il sentiero dei nidi di ragno",
+    "author": "Italo Calvino",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 09:59:32 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1712747537l/3738515._SY475_.jpg"
+  },
+  {
+    "title": "Il mago del Cremlino",
+    "author": "Giuliano da Empoli",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 09:59:16 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1656165691l/61350050._SY475_.jpg"
+  },
+  {
+    "title": "L’Énigme de la chambre 622",
+    "author": "Joël Dicker",
+    "rating": "3",
+    "dateAdded": "Wed, 12 Aug 2026 09:59:00 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1583074647l/51797899._SX318_.jpg"
+  },
+  {
+    "title": "Le città invisibili",
+    "author": "Italo Calvino",
+    "rating": "5",
+    "dateAdded": "Wed, 12 Aug 2026 09:58:25 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1353789244l/1879904.jpg"
+  },
+  {
+    "title": "Un animal sauvage",
+    "author": "Joël Dicker",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 09:58:02 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1711621271l/203835346._SX318_.jpg"
+  },
+  {
+    "title": "Le Cheval Blanc",
+    "author": "Georges Simenon",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 09:57:39 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1378735618l/2209644.jpg"
+  },
+  {
+    "title": "Shōgun (Asian Saga, #1)",
+    "author": "James Clavell",
+    "rating": "5",
+    "dateAdded": "Wed, 12 Aug 2026 09:57:19 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1704385704l/52382796._SY475_.jpg"
+  },
+  {
+    "title": "La vie devant soi",
+    "author": "Romain Gary",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 09:56:44 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327936672l/635150.jpg"
+  },
+  {
+    "title": "Félicie est là",
+    "author": "Georges Simenon",
+    "rating": "4",
+    "dateAdded": "Wed, 12 Aug 2026 09:56:23 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360644467l/17345722.jpg"
+  },
+  {
+    "title": "Maigret en meublé",
+    "author": "Georges Simenon",
+    "rating": "5",
+    "dateAdded": "Wed, 12 Aug 2026 09:55:58 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328032449l/2977069.jpg"
+  },
+  {
+    "title": "A History of Venice",
+    "author": "John Julius Norwich",
+    "rating": "3",
+    "dateAdded": "Wed, 12 Aug 2026 09:52:50 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1331394686l/6109.jpg"
+  },
+  {
+    "title": "The Left Hand of Darkness",
+    "author": "Ursula K. Le Guin",
+    "rating": "5",
+    "dateAdded": "Wed, 12 Aug 2026 09:52:38 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1488213612l/18423._SY475_.jpg"
+  },
+  {
+    "title": "Il Sangue degli Elfi",
+    "author": "Andrzej Sapkowski",
+    "rating": "4",
+    "dateAdded": "Mon, 23 Sep 2024 19:35:17 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1578160678l/19243593._SX318_.jpg"
+  },
+  {
+    "title": "Storia di una caduta",
+    "author": "Stefan Zweig",
+    "rating": "4",
+    "dateAdded": "Wed, 10 Apr 2024 09:24:00 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1329600851l/10432282.jpg"
+  },
+  {
+    "title": "L'insostenibile leggerezza dell'essere",
+    "author": "Milan Kundera",
+    "rating": "5",
+    "dateAdded": "Wed, 08 Aug 2018 08:52:18 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1648031447l/4097499._SY475_.jpg"
+  },
+  {
+    "title": "La malora",
+    "author": "Beppe Fenoglio",
+    "rating": "5",
+    "dateAdded": "Mon, 18 Jun 2018 08:04:48 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1331999843l/915809.jpg"
+  },
+  {
+    "title": "Uscita di sicurezza (Italian Edition)",
+    "author": "Ignazio Silone",
+    "rating": "4",
+    "dateAdded": "Mon, 18 Jun 2018 08:04:14 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1468161325l/30982674._SY475_.jpg"
+  },
+  {
+    "title": "The Dispossessed: An Ambiguous Utopia",
+    "author": "Ursula K. Le Guin",
+    "rating": "5",
+    "dateAdded": "Mon, 18 Jun 2018 08:03:31 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1353467455l/13651.jpg"
+  },
+  {
+    "title": "La Signora del Lago (La saga di Geralt di Rivia, #7)",
+    "author": "Andrzej Sapkowski",
+    "rating": "5",
+    "dateAdded": "Sat, 19 May 2018 12:17:42 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1444950216l/27212999._SX318_.jpg"
+  },
+  {
+    "title": "Maria Stuarda",
+    "author": "Stefan Zweig",
+    "rating": "5",
+    "dateAdded": "Mon, 23 Apr 2018 06:07:57 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1399880808l/22070938.jpg"
+  },
+  {
+    "title": "Costantinopoli (Italian Edition)",
+    "author": "Edmondo de Amicis",
+    "rating": "3",
+    "dateAdded": "Mon, 23 Apr 2018 06:05:04 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1498041866l/35489710._SX318_.jpg"
+  },
+  {
+    "title": "Il valzer degli addii",
+    "author": "Milan Kundera",
+    "rating": "4",
+    "dateAdded": "Wed, 20 Dec 2017 14:07:38 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1344253983l/6270220.jpg"
+  },
+  {
+    "title": "Fontamara",
+    "author": "Ignazio Silone",
+    "rating": "5",
+    "dateAdded": "Sat, 07 Oct 2017 13:47:27 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1172151497l/143250.jpg"
+  },
+  {
+    "title": "A Short History of Byzantium",
+    "author": "John Julius Norwich",
+    "rating": "4",
+    "dateAdded": "Sat, 07 Oct 2017 01:05:41 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386924186l/6106.jpg"
+  },
+  {
+    "title": "Il seme sotto la neve",
+    "author": "Ignazio Silone",
+    "rating": "5",
+    "dateAdded": "Sat, 30 Sep 2017 02:51:51 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1266609950l/6274612.jpg"
+  },
+  {
+    "title": "On Secret Service East of Constantinople: The Plot to Bring Down the British Empire",
+    "author": "Peter Hopkirk",
+    "rating": "4",
+    "dateAdded": "Tue, 19 Sep 2017 09:18:23 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328831857l/1106089.jpg"
+  },
+  {
+    "title": "Vino e pane",
+    "author": "Ignazio Silone",
+    "rating": "5",
+    "dateAdded": "Mon, 28 Aug 2017 03:20:45 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327347702l/3629035.jpg"
+  },
+  {
+    "title": "The Great Game: The Struggle for Empire in Central Asia (Kodansha Globe)",
+    "author": "Peter Hopkirk",
+    "rating": "5",
+    "dateAdded": "Thu, 17 Aug 2017 00:23:46 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1657546436l/138299._SX318_.jpg"
+  },
+  {
+    "title": "Le meraviglie del mondo antico",
+    "author": "Valerio Massimo Manfredi",
+    "rating": "3",
+    "dateAdded": "Sat, 15 Jul 2017 07:42:31 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1419104251l/23979481.jpg"
+  },
+  {
+    "title": "Il cacciatore di aquiloni",
+    "author": "Khaled Hosseini",
+    "rating": "5",
+    "dateAdded": "Sat, 15 Jul 2017 07:42:11 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1427920619l/3995975.jpg"
+  },
+  {
+    "title": "L'isola di Arturo",
+    "author": "Elsa Morante",
+    "rating": "2",
+    "dateAdded": "Sat, 20 May 2017 06:47:33 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1409438832l/1158388.jpg"
+  },
+  {
+    "title": "La stagione delle tempeste (La saga di Geralt di Rivia, #6)",
+    "author": "Andrzej Sapkowski",
+    "rating": "5",
+    "dateAdded": "Sat, 20 May 2017 06:47:06 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1475326781l/32325093._SX318_.jpg"
+  },
+  {
+    "title": "Kürk Mantolu Madonna",
+    "author": "Sabahattin Ali",
+    "rating": "5",
+    "dateAdded": "Wed, 17 May 2017 10:46:51 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1362477552l/220826.jpg"
+  },
+  {
+    "title": "Il mondo del ghiaccio e del fuoco: La storia ufficiale di Westeros e del Trono di Spade",
+    "author": "George R.R. Martin",
+    "rating": "4",
+    "dateAdded": "Wed, 17 May 2017 10:45:39 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1413658666l/23392827.jpg"
+  },
+  {
+    "title": "Franz Anton Mesmer",
+    "author": "Stefan Zweig",
+    "rating": "4",
+    "dateAdded": "Mon, 17 Apr 2017 09:50:05 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1431280806l/25517026.jpg"
+  },
+  {
+    "title": "Morte dell'inquisitore",
+    "author": "Leonardo Sciascia",
+    "rating": "3",
+    "dateAdded": "Mon, 03 Apr 2017 04:07:42 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1391338551l/1623323.jpg"
+  },
+  {
+    "title": "Montaigne",
+    "author": "Stefan Zweig",
+    "rating": "3",
+    "dateAdded": "Fri, 17 Mar 2017 17:30:22 -0700",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1178886035l/849052.jpg"
+  },
+  {
+    "title": "Il cavaliere e la morte",
+    "author": "Leonardo Sciascia",
+    "rating": "5",
+    "dateAdded": "Fri, 10 Mar 2017 13:50:45 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1319006625l/9397261.jpg"
+  },
+  {
+    "title": "Maria Antonietta",
+    "author": "Stefan Zweig",
+    "rating": "5",
+    "dateAdded": "Sat, 04 Mar 2017 05:06:53 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347378898l/13499464.jpg"
+  },
+  {
+    "title": "Se il sole muore",
+    "author": "Oriana Fallaci",
+    "rating": "4",
+    "dateAdded": "Sat, 25 Feb 2017 08:09:58 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1343426502l/9649492.jpg"
+  },
+  {
+    "title": "Intervista con il mito",
+    "author": "Oriana Fallaci",
+    "rating": "4",
+    "dateAdded": "Thu, 26 Jan 2017 02:19:47 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1384627179l/15697936.jpg"
+  },
+  {
+    "title": "Gli occhi di Venezia",
+    "author": "Alessandro Barbero",
+    "rating": "4",
+    "dateAdded": "Thu, 26 Jan 2017 02:19:19 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328205456l/10518044.jpg"
+  },
+  {
+    "title": "Mille splendidi soli",
+    "author": "Khaled Hosseini",
+    "rating": "5",
+    "dateAdded": "Thu, 19 Jan 2017 12:13:42 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1538056788l/3870674._SY475_.jpg"
+  },
+  {
+    "title": "Omaggio alla Catalogna",
+    "author": "George Orwell",
+    "rating": "3",
+    "dateAdded": "Sat, 07 Jan 2017 05:58:47 -0800",
+    "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327316483l/9669123.jpg"
+  }
+]
